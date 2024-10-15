@@ -1,5 +1,5 @@
 <script>
-    export let icon = "";
+    export let icon;
     export let size = "60px";
     export let borderColor = "#ffd700";
     export let backgroundColor = "white";
@@ -10,9 +10,7 @@
     style="--size: {size}; --border-color: {borderColor}; --background-color: {backgroundColor};"
 >
     {#if icon}
-        <svg viewBox="0 0 24 24" width="60%" height="60%">
-            <use xlink:href={icon} />
-        </svg>
+        <img src={icon} />
     {/if}
 </button>
 
@@ -29,6 +27,7 @@
         cursor: pointer;
         transition: all 0.3s ease;
         padding: 0;
+        margin-left: 10px;
     }
 
     .round-button:hover {

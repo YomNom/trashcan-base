@@ -49,7 +49,7 @@
   }
 
   .content {
-    margin-top: 100px;
+    padding-top: 100px;
     width: 100%;
     height: 100%;
     display: flex;
