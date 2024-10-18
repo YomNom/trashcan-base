@@ -4,6 +4,9 @@
   import Counter from "./lib/Counter.svelte";
   import Navbar from "./lib/Navbar.svelte";
   import DeviceUi from "./lib/DeviceUI.svelte";
+  import MotionSensor from "./lib/MotionSensor.svelte";
+  import Lid from "./lib/Lid.svelte";
+  let isLidOpen = false;
 </script>
 
 <main>
@@ -14,10 +17,10 @@
     <div class="content">
       <div class="device-ui">
         <DeviceUi />
+        <MotionSensor bind:isLidOpen={isLidOpen}/>
       </div>
       <div class="mockup-device">
-        <!-- Placeholder for mockup device content -->
-        <h1>Mockup Device</h1>
+        <Lid {isLidOpen} />
       </div>
     </div>
   </div>
@@ -53,7 +56,7 @@
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
   }
 
