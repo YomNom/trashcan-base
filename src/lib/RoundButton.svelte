@@ -10,6 +10,7 @@
     style="--size: {size}; --border-color: {borderColor}; --background-color: {backgroundColor};"
 >
     {#if icon}
+        <!-- svelte-ignore a11y-missing-attribute -->
         <img src={icon} />
     {/if}
 </button>

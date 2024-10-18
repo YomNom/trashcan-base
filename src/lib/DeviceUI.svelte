@@ -57,7 +57,7 @@
     .device-ui-container {
         display: flex;
         flex-direction: column;
-        height: 100%;
+        height: 70%;
         background-color: none;
         border-radius: 20px;
         box-shadow:
