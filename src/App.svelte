@@ -1,9 +1,7 @@
 <script>
-  import svelteLogo from "./assets/svelte.svg";
-  import viteLogo from "/vite.svg";
-  import Counter from "./lib/Counter.svelte";
   import Navbar from "./lib/Navbar.svelte";
   import DeviceUi from "./lib/DeviceUI.svelte";
+  import Mockup from "./lib/Mockup.svelte";
 </script>
 
 <main>
@@ -18,6 +16,7 @@
       <div class="mockup-device">
         <!-- Placeholder for mockup device content -->
         <h1>Mockup Device</h1>
+        <Mockup />
       </div>
     </div>
   </div>
@@ -30,7 +29,6 @@
     align-items: center;
     height: 100vh;
   }
-
   .app-container {
     width: 100%;
     display: flex;
@@ -42,10 +40,11 @@
 
   .navbar {
     width: 100%;
-    background-color: #000;
+    /* background-color: #000; */
     position: fixed;
     top: 0;
     left: 0;
+    background-color: var(--bg-color-hex);
   }
 
   .content {

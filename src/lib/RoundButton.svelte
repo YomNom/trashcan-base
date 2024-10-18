@@ -2,7 +2,7 @@
     export let icon;
     export let size = "60px";
     export let borderColor = "#ffd700";
-    export let backgroundColor = "white";
+    export let backgroundColor = "#edfeef";
 </script>
 
 <button
