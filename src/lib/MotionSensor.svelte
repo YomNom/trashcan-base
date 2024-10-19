@@ -1,5 +1,8 @@
 <script>
     import ButtonComponent from './ButtonComponent.svelte';
+    import openIcon from '/ion--tablet-landscape-outline.svg';
+    import closeIcon from '/ion--tablet-landscape.svg';
+    
     let defaultColor = "#00000";
     let lightColor = defaultColor;
     let isLightOn = false;
@@ -37,10 +40,9 @@
 </script>
 
 <div class="motion-sensor">
-    <ButtonComponent on:click={lidOpen} symbol={"open"} bgColor={"#00000"}></ButtonComponent>
+    <ButtonComponent on:click={lidOpen} symbol={openIcon} bgColor={"#00000"}></ButtonComponent>
     <button class="glowing-box" on:mouseenter={lightToggle} class:is-glowing={isLightOn} style="background-color: {lightColor}"></button>
-    <ButtonComponent on:click={lidClose} symbol={"close"} bgColor={"#00000"}></ButtonComponent>
-    <p>{isLidOpen ? 'The lid is open.' : 'The lid is closed.'}</p>
+    <ButtonComponent on:click={lidClose} symbol={closeIcon} bgColor={"#00000"}></ButtonComponent>
 </div>
 
 
@@ -51,10 +53,10 @@
         align-items: center; /* Align items vertically centered */
         gap: 10px; /* Space between elements */
     }
-    
+
     .glowing-box {
-        width: 10px;
-        height: 30px;
+        width: 20px;
+        height: 60px;
         display: flex;
         justify-content: center;
         align-items: center;

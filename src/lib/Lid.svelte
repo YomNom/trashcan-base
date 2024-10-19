@@ -1,12 +1,12 @@
 <script>
-    let frameColor = '#000'; // Default frame color
-    let innerColor = '#07ac5a'; // Default inner rectangle color
     export let isLidOpen = false; // Initialize the isLidOpen variable
 </script>
 
 <div class="frame">
     {#if !isLidOpen}
-        <div class="inner-rectangle"></div>
+        <img src="/ClosedTrashLid.PNG" alt="Closed-lid" class="image">
+    {:else}
+        <img src="/OpenTrashLid.PNG" alt="Open-lid" class="image">
     {/if}
 </div>
 
@@ -15,15 +15,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 800px; /* Width of the frame */
-        height: 600px; /* Height of the frame */
-        border: 5px solid #53d588; /* Frame border color */
+        width: 90%; /* Adjust as needed */
+        height: 90%; /* Adjust as needed */
+        border: 5px; /* Add a border around the image */
         box-sizing: border-box; /* Include border in the element's total width and height */
     }
 
-  .inner-rectangle {
-      width: 700px; /* Width of the inner rectangle */
-      height: 500px; /* Height of the inner rectangle */
-      background-color: #07ac5a; /* Inner rectangle color */
-  }
+    .image {
+        max-width: 100%; /* Ensure the images fit within the container */
+        height: auto; /* Maintain aspect ratio */
+    }
 </style>

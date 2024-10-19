@@ -14,7 +14,7 @@
     </div>
     <div class="content">
       <div class="device-ui">
-        <DeviceUi />
+        <DeviceUi /><br />
         <MotionSensor bind:isLidOpen />
       </div>
       <div class="mockup-device">
@@ -65,14 +65,17 @@
     width: 800px;
     height: 70%;
     min-height: 700px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
   .mockup-device {
-    width: 60%;
-    height: 100%;
-    background-color: #f0f0f0;
+    width: 800px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
