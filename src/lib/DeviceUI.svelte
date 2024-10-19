@@ -57,6 +57,7 @@
     .device-ui-container {
         display: flex;
         flex-direction: column;
+        width: 800px;
         height: 70%;
         background-color: none;
         border-radius: 20px;

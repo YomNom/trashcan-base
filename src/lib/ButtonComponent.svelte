@@ -1,17 +1,19 @@
 <script>
-    // Declaring props
     export let symbol;
     export let bgColor;
 </script>
 
 <button on:click style="background-color: {bgColor}">
-    {symbol}
+    <!-- svelte-ignore a11y-missing-attribute -->
+    <img src={symbol} />
 </button>
 
 <style>
     button {
         border: none;
-        color: #fff;
+        color: #dddddd;
+        width: 80px;
+        height: 60px;
         font-size: 1.5rem;
         transition: all 250ms;
         transform-origin: center;
