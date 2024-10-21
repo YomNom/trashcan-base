@@ -1,3 +1,39 @@
+# Smart Trashcan Interface [Link]
+# By: Joey Yong, Du Nguyen, Huu Quang Nhat Nguyen, Ming Zeng
+
+This project demonstrates the user interface for a conceptual smart trashcan on a website using svelte & javascript. "Physically", the smart trashcan has a digital screen and motion sensor on the lid. Hosted by vercel, the website has an interactible representation of the screen and the motion sensor, along with a 2D model of the trashcan lid. Logically, the smart trashcan will assist the user by reminding them to take out the trash around trashday and notify them how dirty their trash is based on the level of smell. 
+Features include:
+> Sensing odor strength
+> Motion sensor
+> Age of trash
+> Reminder of trash day
+> Mold detector
+> Analytics of collected data(frequency of throwing out trash, capacity over time, etc.)
+
+## Why this project was made?
+
+The smart trashcan comes from a project for a class on Human Interfaces at the University of Cincinnati that asked us to create an UI for a smart object. We chose the trashcan because of its simple framework. Other ideas we had - backpack, bed, door - were scrapped due to their complexity. Additionally, despite its simplicity, we were easily able to come up with practical features to increase the complexity.
+
+## Color Palette (using https://htmlcolorcodes.com/) 
+
+## Design [Include pictures and videos]
+
+### Features
+
+### Controls
+
+## Implementation
+
+## Future 
+
+## Use of AI
+We are relatively new to svelte and javascript and utilized Github's copilot coding feature in VS, as well as chatGPT. It sped up the coding process by skipping past much of the lookup process and helped with debugging. 
+
+## Libraries [include source links and explain what they were used for]
+Tailwind CSS
+chart.js
+
+# TO RUN LOCALLY
 # Svelte + Vite
 
 This template should help get you started developing with Svelte in Vite.
