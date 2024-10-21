@@ -5,11 +5,11 @@
     import minusIcon from "../assets/minus.svg";
 
     function increaseOdor() {
-        odorLevel.update((n) => Math.min(n + 1, 10));
+        odorLevel.update((n) => Math.min(n + 10, 100));
     }
 
     function decreaseOdor() {
-        odorLevel.update((n) => Math.max(n - 1, 0));
+        odorLevel.update((n) => Math.max(n - 10, 0));
     }
 </script>
 

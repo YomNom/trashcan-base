@@ -1,16 +1,33 @@
 /* Define color variables */
 :root {
-    --main-color: #D3F2E9; /* Device UI main color */
-    --device-ui-container-color: #0A7B79; /* Device UI container color */
-    --device-ui-box-shadow-color: #02353C; /* Device UI box shadow color */
-    --text-color: #0A7B79; /* Text color */
-    --header-color: #0A7B79; /* Device footer and header color */
-    --footer-color: #D3F2E9; /* Device footer and header color */
-    --time-text-color: #f4a363; /* Time text color */
-    --trashday-text-color: #f4a363; /* Trashday text color */
-    --icon-border-color: #06A298; /* Icon border color */
-    --icon-main-color: white; /* Icon main color */
-    --icon-shadow-color: #0f97bb; /* Icon shadow color */
+    --main-color: #D3F2E9;
+    /* Device UI main color */
+    --device-ui-container-color: #0A7B79;
+    /* Device UI container color */
+    --device-ui-box-shadow-color: #02353C;
+    /* Device UI box shadow color */
+    --text-color: #0A7B79;
+    /* Text color */
+    --header-color: #0A7B79;
+    /* Device footer and header color */
+    --footer-color: #D3F2E9;
+    /* Device footer and header color */
+    --time-text-color: #f4a363;
+    /* Time text color */
+    --trashday-text-color: #f4a363;
+    /* Trashday text color */
+    --icon-border-color: #06A298;
+    /* Icon border color */
+    --icon-main-color: white;
+    /* Icon main color */
+    --icon-shadow-color: #0f97bb;
+    /* Icon shadow color */
 
     --color-red: #db767d;
+
+    --good-color: #06A298;
+    --alert-color: #f4a363;
+    /* Time text color */
+    --danger-color: #db767d;
+
 }
