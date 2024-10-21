@@ -1,13 +1,11 @@
 <script>
     export let icon;
     export let size = "60px";
-    export let borderColor = "#ffd700";
-    export let backgroundColor = "white";
 </script>
 
 <button
     class="round-button"
-    style="--size: {size}; --border-color: {borderColor}; --background-color: {backgroundColor};"
+    style="--size: {size}; "
 >
     {#if icon}
         <!-- svelte-ignore a11y-missing-attribute -->
@@ -20,8 +18,8 @@
         width: var(--size);
         height: var(--size);
         border-radius: 50%;
-        border: 5px solid var(--border-color);
-        background-color: var(--background-color);
+        border: 5px solid var(--icon-border-color);
+        background-color: var(--icon-main-color);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -33,7 +31,7 @@
 
     .round-button:hover {
         transform: scale(1.1);
-        box-shadow: 0 0 10px var(--border-color);
+        box-shadow: 0 0 10px var(--icon-shadow-color);
     }
 
     .round-button:active {

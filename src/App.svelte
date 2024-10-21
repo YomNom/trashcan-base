@@ -6,6 +6,7 @@
   import DeviceUi from "./lib/DeviceUI.svelte";
   import MotionSensor from "./lib/MotionSensor.svelte";
   import Lid from "./lib/Lid.svelte";
+  import "./variables.css";
   let isLidOpen = false;
 </script>
 
