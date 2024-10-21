@@ -1,12 +1,11 @@
 <script>
-  import svelteLogo from "./assets/svelte.svg";
-  import viteLogo from "/vite.svg";
-  import Counter from "./lib/Counter.svelte";
   import Navbar from "./lib/Navbar.svelte";
   import DeviceUi from "./lib/DeviceUI.svelte";
+  import Mockup from "./lib/Mockup.svelte";
   import MotionSensor from "./lib/MotionSensor.svelte";
   import Lid from "./lib/Lid.svelte";
   import "./variables.css";
+  import TrashcanSideview from "./lib/trashcanSideview.svelte";
   let isLidOpen = false;
 </script>
 
@@ -17,11 +16,14 @@
     </div>
     <div class="content">
       <div class="device-ui">
-        <DeviceUi /><br>
-        <MotionSensor bind:isLidOpen={isLidOpen}/>
+        <DeviceUi /><br />
+        <MotionSensor bind:isLidOpen />
       </div>
-      <div class="mockup-device">
+      <div class="mockup-container">
+        <!-- Placeholder for mockup device content -->
+        <h1>SmartTrash Mockup</h1>
         <Lid {isLidOpen} />
+        <!-- <TrashcanSideview /> -->
       </div>
     </div>
   </div>
@@ -34,7 +36,6 @@
     align-items: center;
     height: 100vh;
   }
-
   .app-container {
     width: 100%;
     display: flex;
@@ -46,10 +47,11 @@
 
   .navbar {
     width: 100%;
-    background-color: #000;
+    /* background-color: #000; */
     position: fixed;
     top: 0;
     left: 0;
+    background-color: var(--bg-color-hex);
   }
 
   .content {
@@ -57,13 +59,12 @@
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    
   }
 
   .device-ui {
-    width: 800px;
+    width: 40%;
     height: 70%;
     min-height: 700px;
     display: flex;
@@ -72,9 +73,8 @@
     align-items: center;
   }
 
-  .mockup-device {
-    width: 800px;
-    margin-top: 20px; 
+  .mockup-container {
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;

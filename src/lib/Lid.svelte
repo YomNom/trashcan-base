@@ -4,9 +4,9 @@
 
 <div class="frame">
     {#if !isLidOpen}
-        <img src="/ClosedTrashLid.PNG" alt="Closed-lid" class="image">
+        <img src="/ClosedTrashLid.PNG" alt="Closed-lid" class="image" />
     {:else}
-        <img src="/OpenTrashLid.PNG" alt="Open-lid" class="image">
+        <img src="/OpenTrashLid.PNG" alt="Open-lid" class="image" />
     {/if}
 </div>
 
@@ -15,8 +15,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 90%; /* Adjust as needed */
-        height: 90%; /* Adjust as needed */
+        width: 60%; /* Adjust as needed */
+        height: 60%; /* Adjust as needed */
         border: 5px; /* Add a border around the image */
         box-sizing: border-box; /* Include border in the element's total width and height */
     }
