@@ -1,23 +1,25 @@
 <script>
   export let isOpen = false;
   export let closePopup;
-  export let message = "";  // For displaying a single message
-  export let notificationLog = [];  // For displaying a list of notifications
+  export let message = ""; // For displaying a single message
+  export let notificationLog = []; // For displaying a list of notifications
 </script>
 
 {#if isOpen}
   <div class="popup-overlay">
     <div class="popup-content">
       <h2>Notification</h2>
-      
+
       {#if message}
-        <p>{message}</p> <!-- Show a single message -->
+        <p>{message}</p>
+        <!-- Show a single message -->
       {/if}
 
       {#if notificationLog.length > 0}
         <ul>
           {#each notificationLog as log}
-            <li>{log}</li> <!-- Show the full notification log -->
+            <li>{log}</li>
+            <!-- Show the full notification log -->
           {/each}
         </ul>
       {/if}
@@ -42,14 +44,14 @@
   }
 
   .popup-content {
-  background-color: white;
-  border-radius: 8px;
-  padding: 20px;
-  width: 300px;
-  max-width: 80%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    max-width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
 
   .popup-close {
     margin-top: 20px;

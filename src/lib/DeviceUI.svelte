@@ -107,8 +107,8 @@
 <!-- Apply the selected background color to the central section -->
 <div class="device-ui-container">
     <div class="device-header">
-        <h1>{currentTime}</h1>
-        <h3>
+        <h1 class="time-text">{currentTime}</h1>
+        <h3 class="trashday-text">
             <span class="trashday-countdown">{daysToTrashday}</span> days to trash
             day
         </h3>
@@ -221,19 +221,19 @@
     }
 
     .device-main {
-        height: 70%;
+        position: relative;
+        height: 80%;
         background-color: var(--main-color);
     }
 
     .led-display {
-        justify-content: center;
-        align-items: center;
+        padding: auto;
         height: 100%;
     }
 
     .led-number {
         font-size: 10em;
-        margin: 0;
+        margin: auto;
         font-weight: bold;
         color: var(--text-color);
         width: 100%;
@@ -256,7 +256,7 @@
         height: 100%;
     }
     .device-footer {
-        height: 20%;
+        height: 10%;
         background-color: var(--footer-color);
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;

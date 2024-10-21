@@ -23,7 +23,7 @@
         <!-- Placeholder for mockup device content -->
         <h1>SmartTrash Mockup</h1>
         <Lid {isLidOpen} />
-        <TrashcanSideview />
+        <!-- <TrashcanSideview /> -->
       </div>
     </div>
   </div>
