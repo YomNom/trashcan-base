@@ -14,7 +14,7 @@
     let isLatestChangeOpen = false; // For latest change popup
     let isSettingsOpen = false;
     let isGraphOpen = false; // This will control the GraphPopup
-    let backgroundColor = "#ff0000"; // Default background color
+    let backgroundColor = "#D3F2E9"; // Default background color
     let trashDay = 5; // Default trash day
     let notificationLog = []; // List to store notification messages
     let notificationMessage = ""; // Message for the latest change
@@ -114,9 +114,10 @@
         </h3>
     </div>
 
-    <div class="device-main" style="background-color: {backgroundColor}">
+    <div class="device-main">
         <div class="led-display">
-            <span class="led-number">{daysOld} days old</span>
+            <h1 class="led-number">{daysOld}</h1>
+            <p class="led-text">days old</p>
         </div>
 
         <!-- Latest Change Popup (centered inside device-main) -->
@@ -180,57 +181,72 @@
     .device-ui-container {
         display: flex;
         flex-direction: column;
-        height: 100%;
+        width: 800px;
+        height: 70%;
         background-color: none;
         border-radius: 20px;
-        box-shadow:
-            0 0 10px #ffd700,
-            0 0 20px #ffd700,
-            0 0 30px #ffd700;
         animation: neonGlow 1.5s ease-in-out infinite alternate;
         font-family: "Courier New", Courier, monospace;
+        border: 1px solid var(--device-ui-container-color);
+        box-shadow: 0 0 10px var(--device-ui-box-shadow-color);
     }
 
     .device-header {
         height: 10%;
-        background-color: rgb(47, 225, 219);
+        background-color: var(--header-color);
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-        padding: 0 10px;
+        padding: 10px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
+    .time-text {
+        color: var(--time-text-color);
+        font-weight: bold;
+    }
+
     .trashday-countdown {
-        color: #ffd700;
+        color: var(--trashday-text-color);
         font-weight: bold;
         font-size: 1.5em;
     }
 
+    .trashday-text {
+        color: var(--trashday-text-color);
+        font-weight: bold;
+        font-size: 1.5em;
+        margin-left: 5px;
+    }
+
     .device-main {
-        position: relative; /* Ensures the popup is positioned relative to this container */
         height: 70%;
-        background-color: red;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        background-color: var(--main-color);
     }
 
     .led-display {
-        display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
     }
 
     .led-number {
-        font-size: 5em;
-        color: #ffd700;
-        text-shadow:
-            0 0 10px black,
-            0 0 20px black,
-            0 0 30px black;
+        font-size: 10em;
+        margin: 0;
+        font-weight: bold;
+        color: var(--text-color);
+        width: 100%;
+        text-align: center;
+    }
+
+    .led-text {
+        font-size: 3em;
+        margin: auto;
+        font-weight: bold;
+        color: var(--text-color);
+        width: 100%;
+        text-align: center;
     }
 
     .button-container {
@@ -239,12 +255,12 @@
         align-items: center;
         height: 100%;
     }
-
     .device-footer {
         height: 20%;
-        background-color: blue;
+        background-color: var(--footer-color);
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
+        padding: 10px;
         display: flex;
         justify-content: space-around;
     }

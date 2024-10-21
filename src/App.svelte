@@ -5,6 +5,7 @@
   import MotionSensor from "./lib/MotionSensor.svelte";
   import Lid from "./lib/Lid.svelte";
   import "./variables.css";
+  import TrashcanSideview from "./lib/trashcanSideview.svelte";
   let isLidOpen = false;
 </script>
 
@@ -18,11 +19,11 @@
         <DeviceUi /><br />
         <MotionSensor bind:isLidOpen />
       </div>
-      <div class="mockup-device">
+      <div class="mockup-container">
         <!-- Placeholder for mockup device content -->
-        <h1>Mockup Device</h1>
-        <Mockup />
+        <h1>SmartTrash Mockup</h1>
         <Lid {isLidOpen} />
+        <TrashcanSideview />
       </div>
     </div>
   </div>
@@ -58,12 +59,12 @@
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
 
   .device-ui {
-    width: 800px;
+    width: 40%;
     height: 70%;
     min-height: 700px;
     display: flex;
@@ -72,9 +73,8 @@
     align-items: center;
   }
 
-  .mockup-device {
-    width: 800px;
-    margin-top: 20px;
+  .mockup-container {
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
