@@ -6,6 +6,7 @@
   import Lid from "./lib/Lid.svelte";
   import "./variables.css";
   import TrashcanSideview from "./lib/trashcanSideview.svelte";
+  import OdorControl from "./lib/OdorControl.svelte";
   let isLidOpen = false;
 </script>
 
@@ -18,6 +19,7 @@
       <div class="device-ui">
         <DeviceUi /><br />
         <MotionSensor bind:isLidOpen />
+        <OdorControl />
       </div>
       <div class="mockup-container">
         <!-- Placeholder for mockup device content -->

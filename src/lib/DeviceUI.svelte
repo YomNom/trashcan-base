@@ -16,7 +16,7 @@
     let isGraphOpen = false; // This will control the GraphPopup
     let backgroundColor = "#D3F2E9"; // Default background color
     let trashDay = 5; // Default trash day
-    let notificationLog = []; // List to store notification messages
+    let notificationLog = ["demo log 1", "demo log 2"]; // List to store notification messages
     let notificationMessage = ""; // Message for the latest change
 
     function updateTime() {
@@ -45,16 +45,17 @@
     let daysToTrashday = calculateDaysToTrashday(); // Dynamically calculate days to trash day
 
     function handleNotificationClick() {
-        isNotificationOpen = true; // Open the full notification log popup
+        isNotificationOpen = !isNotificationOpen; // Open the full notification log popup
         isLatestChangeOpen = false;
     }
 
     function handleSettingsClick() {
-        isSettingsOpen = true;
+        isSettingsOpen = !isSettingsOpen;
+        console.log(isSettingsOpen);
     }
 
     function handleGraphClick() {
-        isGraphOpen = true; // Open the graph popup
+        isGraphOpen = !isGraphOpen; // Open the graph popup
     }
 
     function closeNotificationPopup() {
@@ -227,13 +228,16 @@
     }
 
     .led-display {
-        padding: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centers vertically */
+        align-items: center; /* Centers horizontally */
         height: 100%;
     }
 
     .led-number {
         font-size: 10em;
-        margin: auto;
+        margin: 0; /* Reset margin */
         font-weight: bold;
         color: var(--text-color);
         width: 100%;
@@ -242,7 +246,7 @@
 
     .led-text {
         font-size: 3em;
-        margin: auto;
+        margin: 0; /* Reset margin */
         font-weight: bold;
         color: var(--text-color);
         width: 100%;
