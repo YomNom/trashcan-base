@@ -1,5 +1,5 @@
 # Smart Trashcan Interface [Link]
-# By: Joey Yong, Du Nguyen, Huu Quang Nhat Nguyen, Ming Zeng
+### By: Joey Yong, Du Nguyen, Huu Quang Nhat Nguyen, Ming Zeng
 
 This project demonstrates the user interface for a conceptual smart trashcan on a website using svelte & javascript. "Physically", the smart trashcan has a digital screen and motion sensor on the lid. Hosted by vercel, the website has an interactible representation of the screen and the motion sensor, along with a 2D model of the trashcan lid. Logically, the smart trashcan will assist the user by reminding them to take out the trash around trashday and notify them how dirty their trash is based on the level of smell. 
 Features include:
