@@ -3,10 +3,13 @@
     import NotificationIcon from "../assets/noti.svg";
     import ChartsIcon from "../assets/charts.svg";
     import RoundButton from "./RoundButton.svelte";
+    import TrashIcon from "../assets/trash.svg";
     import OdorMeter from "./OdorMeter.svelte";
     import Popup from "./Popup.svelte";
     import SettingsPopup from "./SettingsPopup.svelte";
     import GraphPopup from "./GraphPopup.svelte"; // Import the GraphPopup
+
+    export let isTrashPackaged;
 
     import {
         OdorLevel,
@@ -43,6 +46,13 @@
     NotificationMessage.subscribe((value) => (notificationMessage = value));
 
     OdorLevel.subscribe((value) => (odorLevel = value));
+
+    function handleTrashClick() {
+        DaysOld.set(0);
+        addNotification("Trash can emptied!");
+        isTrashPackaged = true;
+        OdorLevel.set(0);
+    }
 
     function updateTime() {
         const now = new Date();
@@ -195,6 +205,10 @@
                 </div>
                 <div class="button-column">
                     <div class="button-container">
+                        <RoundButton
+                            icon={TrashIcon}
+                            on:click={handleTrashClick}
+                        />
                         <RoundButton
                             icon={NotificationIcon}
                             on:click={handleNotificationClick}

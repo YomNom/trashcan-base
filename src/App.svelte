@@ -8,6 +8,7 @@
   import TrashcanSideview from "./lib/trashcanSideview.svelte";
   import OdorControl from "./lib/OdorControl.svelte";
   let isLidOpen = false;
+  let isTrashPackaged = false;
 </script>
 
 <main>
@@ -17,7 +18,7 @@
     </div>
     <div class="content">
       <div class="device-ui">
-        <DeviceUi /><br />
+        <DeviceUi bind:isTrashPackaged />
         <MotionSensor bind:isLidOpen />
         <div class="odor-control">
           <h2>Odor Control</h2>
@@ -28,7 +29,7 @@
         <!-- Placeholder for mockup device content -->
         <h1>SmartTrash Mockup</h1>
         <Lid {isLidOpen} />
-        <!-- <TrashcanSideview /> -->
+        <TrashcanSideview {isLidOpen} {isTrashPackaged} />
       </div>
     </div>
   </div>
