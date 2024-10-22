@@ -18,6 +18,7 @@
     </div>
     <div class="content">
       <div class="device-ui">
+        <h1>Device UI</h1>
         <DeviceUi bind:isTrashPackaged />
         <MotionSensor bind:isLidOpen />
         <div class="odor-control">
@@ -28,7 +29,10 @@
       <div class="mockup-container">
         <!-- Placeholder for mockup device content -->
         <h1>SmartTrash Mockup</h1>
+        <h2>Top View</h2>
         <Lid {isLidOpen} />
+        <h2>Side View</h2>
+
         <TrashcanSideview {isLidOpen} {isTrashPackaged} />
       </div>
     </div>

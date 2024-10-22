@@ -34,6 +34,7 @@
     let notificationLog;
     let notificationMessage;
     let odorLevel;
+    let notiClicked = false;
 
     DaysOld.subscribe((value) => (daysOld = value));
     IsNotificationOpen.subscribe((value) => (isNotificationOpen = value));
@@ -52,6 +53,11 @@
         addNotification("Trash can emptied!");
         isTrashPackaged = true;
         OdorLevel.set(0);
+        if (isTrashPackaged) {
+            setTimeout(() => {
+                isTrashPackaged = false;
+            }, 2000);
+        }
     }
 
     function updateTime() {
@@ -79,6 +85,7 @@
     let daysToTrashday = calculateDaysToTrashday(); // Dynamically calculate days to trash day
 
     function handleNotificationClick() {
+        notiClicked = true;
         isNotificationOpen = !isNotificationOpen; // Open the full notification log popup
         isLatestChangeOpen = false;
     }
@@ -166,20 +173,6 @@
             <p class="led-text">days old</p>
         </div>
 
-        <!-- Latest Change Popup (centered inside device-main) -->
-        <Popup
-            message={notificationMessage}
-            isOpen={isLatestChangeOpen}
-            closePopup={closeLatestChangePopup}
-        />
-
-        <!-- Full Notification Log Popup (also centered inside device-main) -->
-        <Popup
-            {notificationLog}
-            isOpen={isNotificationOpen}
-            closePopup={handleNotificationClick}
-        />
-
         <!-- Graph Popup for showing mock data -->
         <GraphPopup isOpen={isGraphOpen} closePopup={handleGraphClick} />
 
@@ -189,6 +182,20 @@
             onColorChange={handleColorChange}
             {trashDay}
             onTrashDayChange={handleTrashDayChange}
+            addNoti={addNotification}
+        />
+        <!-- Latest Change Popup (centered inside device-main) -->
+        <Popup
+            message={notificationMessage}
+            isOpen={isLatestChangeOpen}
+            closePopup={closeLatestChangePopup}
+        />
+        <!-- Full Notification Log Popup (also centered inside device-main) -->
+        <Popup
+            {notificationLog}
+            openedbyClick={notiClicked}
+            isOpen={isNotificationOpen}
+            closePopup={handleNotificationClick}
         />
     </div>
 

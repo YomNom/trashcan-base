@@ -1,8 +1,16 @@
 <script>
   export let isOpen = false;
+  export let openedbyClick = false;
   export let closePopup;
   export let message = ""; // For displaying a single message
   export let notificationLog = []; // For displaying a list of notifications
+  import { NotificationLog, NotificationMessage } from "../lib/store";
+  let currentMes;
+  NotificationMessage.subscribe((value) => (currentMes = value));
+  function deleteAllMessButtonClick() {
+    NotificationLog.set([]);
+    closePopup();
+  }
 </script>
 
 {#if isOpen}
@@ -23,8 +31,14 @@
           {/each}
         </ul>
       {/if}
-
-      <button class="popup-close" on:click={closePopup}>Close</button>
+      <div>
+        {#if openedbyClick}
+          <button class="popup-close" on:click={deleteAllMessButtonClick}
+            >Delete All</button
+          >
+        {/if}
+        <button class="popup-close" on:click={closePopup}>Close</button>
+      </div>
     </div>
   </div>
 {/if}

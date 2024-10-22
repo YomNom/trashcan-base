@@ -3,6 +3,7 @@
 
     export let isLidOpen = false;
     export let isTrashPackaged = false;
+
     $: showLine = isLidOpen;
     $: showTrash = isTrashPackaged;
 </script>

@@ -19,8 +19,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 60%; /* Adjust as needed */
-        height: 60%; /* Adjust as needed */
+        width: 45%; /* Adjust as needed */
+        height: 45%; /* Adjust as needed */
         border: 5px; /* Add a border around the image */
         box-sizing: border-box; /* Include border in the element's total width and height */
     }
