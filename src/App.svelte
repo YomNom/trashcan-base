@@ -19,7 +19,10 @@
       <div class="device-ui">
         <DeviceUi /><br />
         <MotionSensor bind:isLidOpen />
-        <OdorControl />
+        <div class="odor-control">
+          <h2>Odor Control</h2>
+          <OdorControl />
+        </div>
       </div>
       <div class="mockup-container">
         <!-- Placeholder for mockup device content -->
@@ -69,6 +72,15 @@
     width: 40%;
     height: 70%;
     min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .odor-control {
+    margin-top: 50px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;

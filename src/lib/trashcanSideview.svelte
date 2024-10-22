@@ -1,5 +1,5 @@
 <script>
-    import { odorLevel } from "./store.js";
+    import { OdorLevel } from "./store.js";
     import { draw } from "svelte/transition";
 
     $: showLine = 9 > 5;

@@ -29,7 +29,7 @@
     width: var(--size);
     height: var(--size);
     border-radius: 50%;
-    border: 5px solid var(--icon-border-color);
+    border: 3px solid var(--icon-border-color);
     background-color: var(--icon-main-color);
     display: flex;
     justify-content: center;

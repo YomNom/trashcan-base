@@ -1,11 +1,11 @@
 <script>
-    import { odorLevel } from "./store.js";
+    import { OdorLevel } from "./store.js";
 
-    $: fillWidth = $odorLevel * 1.8; // 180 (90% of 200) divided by 100 levels
+    $: fillWidth = $OdorLevel * 1.8; // 180 (90% of 200) divided by 100 levels
     $: fillColor =
-        $odorLevel <= 33
+        $OdorLevel <= 33
             ? "var(--good-color)"
-            : $odorLevel <= 67
+            : $OdorLevel <= 67
               ? "var(--alert-color)"
               : "var(--danger-color)";
 </script>

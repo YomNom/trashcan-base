@@ -8,16 +8,41 @@
     import SettingsPopup from "./SettingsPopup.svelte";
     import GraphPopup from "./GraphPopup.svelte"; // Import the GraphPopup
 
-    let daysOld = 5;
+    import {
+        OdorLevel,
+        DaysOld,
+        CurrentTime,
+        IsNotificationOpen,
+        IsLatestChangeOpen,
+        IsSettingsOpen,
+        IsGraphOpen,
+        TrashDay,
+        NotificationLog,
+        NotificationMessage,
+    } from "./store.js";
+
     let currentTime = "";
-    let isNotificationOpen = false; // For full notification log popup
-    let isLatestChangeOpen = false; // For latest change popup
-    let isSettingsOpen = false;
-    let isGraphOpen = false; // This will control the GraphPopup
-    let backgroundColor = "#D3F2E9"; // Default background color
-    let trashDay = 5; // Default trash day
-    let notificationLog = ["demo log 1", "demo log 2"]; // List to store notification messages
-    let notificationMessage = ""; // Message for the latest change
+    let daysOld;
+    let isNotificationOpen;
+    let isLatestChangeOpen;
+    let isSettingsOpen;
+    let isGraphOpen;
+    let trashDay;
+    let notificationLog;
+    let notificationMessage;
+    let odorLevel;
+
+    DaysOld.subscribe((value) => (daysOld = value));
+    IsNotificationOpen.subscribe((value) => (isNotificationOpen = value));
+    IsLatestChangeOpen.subscribe((value) => (isLatestChangeOpen = value));
+    IsSettingsOpen.subscribe((value) => (isSettingsOpen = value));
+    IsGraphOpen.subscribe((value) => (isGraphOpen = value));
+    TrashDay.subscribe((value) => (trashDay = value));
+
+    NotificationLog.subscribe((value) => (notificationLog = value));
+    NotificationMessage.subscribe((value) => (notificationMessage = value));
+
+    OdorLevel.subscribe((value) => (odorLevel = value));
 
     function updateTime() {
         const now = new Date();
@@ -38,7 +63,6 @@
         } else {
             daysToTrashday = 7 - (today - trashDay); // Trash day is next week
         }
-
         return daysToTrashday;
     }
 
@@ -51,31 +75,18 @@
 
     function handleSettingsClick() {
         isSettingsOpen = !isSettingsOpen;
-        console.log(isSettingsOpen);
     }
 
     function handleGraphClick() {
         isGraphOpen = !isGraphOpen; // Open the graph popup
     }
 
-    function closeNotificationPopup() {
-        isNotificationOpen = false;
-    }
-
     function closeLatestChangePopup() {
         isLatestChangeOpen = false;
     }
 
-    function closeSettingsPopup() {
-        isSettingsOpen = false;
-    }
-
-    function closeGraphPopup() {
-        isGraphOpen = false; // Close the graph popup
-    }
-
     function handleColorChange(color) {
-        backgroundColor = color; // Change the background color
+        // backgroundColor = color; // Change the background color
     }
 
     function handleTrashDayChange(newTrashDay) {
@@ -87,8 +98,8 @@
         notificationLog.push(newNotification); // Add to notification log
         notificationMessage = newNotification; // Show latest change in the popup
 
-        isLatestChangeOpen = true; // Open the latest change popup
-        isNotificationOpen = false; // Ensure the full log popup is closed
+        // isLatestChangeOpen = true; // Open the latest change popup
+        // isNotificationOpen = false; // Ensure the full log popup is closed
     }
 
     function getDayName(dayIndex) {
@@ -103,6 +114,30 @@
         ];
         return days[dayIndex];
     }
+
+    let lastNotificationLevel = 0;
+
+    function checkOdorLevel(odorLevel) {
+        if (odorLevel >= 50 && lastNotificationLevel < 50) {
+            addNotification(
+                "Odor level is getting high. Consider putting the trash can away.",
+            );
+            lastNotificationLevel = 50;
+        } else if (odorLevel >= 70 && lastNotificationLevel < 70) {
+            addNotification(
+                "Odor level is very high! Please put the trash can away immediately.",
+            );
+            lastNotificationLevel = 70;
+        } else lastNotificationLevel = odorLevel;
+    }
+
+    function addNotification(message) {
+        notificationLog = [...notificationLog, message];
+        notificationMessage = message;
+        isLatestChangeOpen = true;
+    }
+
+    $: checkOdorLevel($OdorLevel);
 </script>
 
 <!-- Apply the selected background color to the central section -->
@@ -132,15 +167,15 @@
         <Popup
             {notificationLog}
             isOpen={isNotificationOpen}
-            closePopup={closeNotificationPopup}
+            closePopup={handleNotificationClick}
         />
 
         <!-- Graph Popup for showing mock data -->
-        <GraphPopup isOpen={isGraphOpen} closePopup={closeGraphPopup} />
+        <GraphPopup isOpen={isGraphOpen} closePopup={handleGraphClick} />
 
         <SettingsPopup
             isOpen={isSettingsOpen}
-            closePopup={closeSettingsPopup}
+            closePopup={handleSettingsClick}
             onColorChange={handleColorChange}
             {trashDay}
             onTrashDayChange={handleTrashDayChange}
@@ -153,6 +188,7 @@
                 <div class="meter-column">
                     <div class="meter-container">
                         <div class="meter">
+                            <h3 class="odor-level-text">Odor Level</h3>
                             <OdorMeter />
                         </div>
                     </div>
@@ -264,7 +300,7 @@
         background-color: var(--footer-color);
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        padding: 10px;
+        padding: 20px;
         display: flex;
         justify-content: space-around;
     }
@@ -280,5 +316,12 @@
         padding: 0 10px;
         align-items: center;
         width: 100%;
+    }
+
+    .odor-level-text {
+        color: var(--text-color);
+        margin: 0 auto;
+        font-weight: bold;
+        font-size: 1.5em;
     }
 </style>

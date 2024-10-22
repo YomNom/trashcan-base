@@ -1,17 +1,17 @@
 <script>
     import Sideview from "./trashcanSideview.svelte";
     import RoundButton from "./RoundButton.svelte";
-    import { odorLevel } from "./store.js";
+    import { OdorLevel } from "./store.js";
 
     let trashcanSize = 200;
     let buttonSize = "60px";
 
-    function increaseOdor() {
-        odorLevel.update((n) => Math.min(n + 1, 10));
+    function increaseOdorLevel() {
+        OdorLevel.update((n) => Math.min(n + 1, 10));
     }
 
-    function decreaseOdor() {
-        odorLevel.update((n) => Math.max(n - 1, 0));
+    function decreaseOdorLevel() {
+        OdorLevel.update((n) => Math.max(n - 1, 0));
     }
 </script>
 
@@ -20,18 +20,18 @@
     <div class="trashcan-container">
         <Sideview />
     </div>
-    <div class="odor-controls">
+    <div class="OdorLevel-controls">
         <!-- <RoundButton
             icon="/minus-icon.svg"
-            on:click={decreaseOdor}
+            on:click={decreaseOdorLevel}
             size={buttonSize}
         />
-        <div class="odor-display">
-            Odor Level: {$odorLevel}
+        <div class="OdorLevel-display">
+            OdorLevel Level: {$OdorLevel}
         </div>
         <RoundButton
             icon="/plus-icon.svg"
-            on:click={increaseOdor}
+            on:click={increaseOdorLevel}
             size={buttonSize}
         /> -->
     </div>
@@ -52,13 +52,13 @@
         margin: 20px 0;
     }
 
-    .odor-controls {
+    .OdorLevel-controls {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .odor-display {
+    .OdorLevel-display {
         font-size: 1.2rem;
         margin: 0 20px;
     }
