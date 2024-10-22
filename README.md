@@ -1,26 +1,28 @@
 # Smart Trashcan Interface (https://trashcan-base.vercel.app/) 
-### By: Joey Yong, Du Nguyen, Huu Quang Nhat Nguyen, Ming Zeng
+### By Joey Yong, Du Nguyen, Huu Quang Nhat Nguyen, Ming Zeng
 
-This project demonstrates the user interface for a conceptual smart trashcan on a website using svelte & javascript. "Physically", the smart trashcan has a digital screen and motion sensor on the lid. Hosted by vercel, the website has an interactible representation of the screen and the motion sensor, along with a 2D model of the trashcan lid. Logically, the smart trashcan will assist the user by reminding them to take out the trash around trashday and notify them how dirty their trash is based on the level of smell. 
-Features include:
-> Sensing odor strength
-> Motion sensor
-> Age of trash
-> Reminder of trash day
-> Mold detector
-> Analytics of collected data(frequency of throwing out trash, capacity over time, etc.)
+This project demonstrates the user interface for a conceptual smart trashcan on a website using svelte & javascript. "Physically", the smart trashcan has a digital screen and motion sensor on the lid. Hosted by vercel, the website has an interactible representation of the screen and the motion sensor, along with a 2D model of the trashcan lid. Logically, the smart trashcan will assist the user by reminding them to take out the trash around trashday and notify them how dirty their trash is based on the level of smell. The trashcan also bags up trash and takes it out.
 
 ## Why this project was made?
 
 The smart trashcan comes from a project for a class on Human Interfaces at the University of Cincinnati that asked us to create an UI for a smart object. We chose the trashcan because of its simple framework. Other ideas we had - backpack, bed, door - were scrapped due to their complexity. Additionally, despite its simplicity, we were easily able to come up with practical features to increase the complexity.
 
-## Color Palette (using https://htmlcolorcodes.com/) 
+### Features [Include pictures and videos]
 
-## Design [Include pictures and videos]
+- Sensing odor strength
+  
+- Motion sensor
 
-### Features
+- Reminder of trash day
+- Analytics of
 
-### Controls
+## Design 
+
+Visually, the interface for the digital screen is enlarged and interactible on the left with the motion sensor and external controls below it. On the right are 2D illustrations of the trashcan in action.
+The overhead of the lid are images created through Procreate and goes between two images based on when the lid is oopen or closed. On the lid, there's a placeholder on where the digital screen would be.
+### Color Palette 
+
+
 
 ## Implementation
 
