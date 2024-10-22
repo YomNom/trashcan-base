@@ -3,10 +3,13 @@
     import NotificationIcon from "../assets/noti.svg";
     import ChartsIcon from "../assets/charts.svg";
     import RoundButton from "./RoundButton.svelte";
+    import TrashIcon from "../assets/trash.svg";
     import OdorMeter from "./OdorMeter.svelte";
     import Popup from "./Popup.svelte";
     import SettingsPopup from "./SettingsPopup.svelte";
     import GraphPopup from "./GraphPopup.svelte"; // Import the GraphPopup
+
+    export let isTrashPackaged;
 
     import {
         OdorLevel,
@@ -31,6 +34,7 @@
     let notificationLog;
     let notificationMessage;
     let odorLevel;
+    let notiClicked = false;
 
     DaysOld.subscribe((value) => (daysOld = value));
     IsNotificationOpen.subscribe((value) => (isNotificationOpen = value));
@@ -43,6 +47,18 @@
     NotificationMessage.subscribe((value) => (notificationMessage = value));
 
     OdorLevel.subscribe((value) => (odorLevel = value));
+
+    function handleTrashClick() {
+        DaysOld.set(0);
+        addNotification("Trash can emptied!");
+        isTrashPackaged = true;
+        OdorLevel.set(0);
+        if (isTrashPackaged) {
+            setTimeout(() => {
+                isTrashPackaged = false;
+            }, 2000);
+        }
+    }
 
     function updateTime() {
         const now = new Date();
@@ -69,6 +85,7 @@
     let daysToTrashday = calculateDaysToTrashday(); // Dynamically calculate days to trash day
 
     function handleNotificationClick() {
+        notiClicked = true;
         isNotificationOpen = !isNotificationOpen; // Open the full notification log popup
         isLatestChangeOpen = false;
     }
@@ -156,20 +173,6 @@
             <p class="led-text">days old</p>
         </div>
 
-        <!-- Latest Change Popup (centered inside device-main) -->
-        <Popup
-            message={notificationMessage}
-            isOpen={isLatestChangeOpen}
-            closePopup={closeLatestChangePopup}
-        />
-
-        <!-- Full Notification Log Popup (also centered inside device-main) -->
-        <Popup
-            {notificationLog}
-            isOpen={isNotificationOpen}
-            closePopup={handleNotificationClick}
-        />
-
         <!-- Graph Popup for showing mock data -->
         <GraphPopup isOpen={isGraphOpen} closePopup={handleGraphClick} />
 
@@ -179,6 +182,20 @@
             onColorChange={handleColorChange}
             {trashDay}
             onTrashDayChange={handleTrashDayChange}
+            addNoti={addNotification}
+        />
+        <!-- Latest Change Popup (centered inside device-main) -->
+        <Popup
+            message={notificationMessage}
+            isOpen={isLatestChangeOpen}
+            closePopup={closeLatestChangePopup}
+        />
+        <!-- Full Notification Log Popup (also centered inside device-main) -->
+        <Popup
+            {notificationLog}
+            openedbyClick={notiClicked}
+            isOpen={isNotificationOpen}
+            closePopup={handleNotificationClick}
         />
     </div>
 
@@ -195,6 +212,10 @@
                 </div>
                 <div class="button-column">
                     <div class="button-container">
+                        <RoundButton
+                            icon={TrashIcon}
+                            on:click={handleTrashClick}
+                        />
                         <RoundButton
                             icon={NotificationIcon}
                             on:click={handleNotificationClick}

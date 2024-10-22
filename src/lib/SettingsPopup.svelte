@@ -4,6 +4,7 @@
   export let onColorChange;
   export let trashDay = 5; // Default to Friday
   export let onTrashDayChange;
+  export let addNoti;
   import { DaysOld } from "./store.js";
   let selectedColor = "#ffffff"; // Default color
   let selectedTrashDay;
@@ -29,11 +30,14 @@
     selectedColor = "#ffffff";
     selectedTrashDay = 2;
     DaysOld.set(0);
+    // closePopup();
+    addNoti("Setting is resetted!");
   }
 
   function saveButtonClick() {
     DaysOld.set(daysOld);
     closePopup();
+    addNoti("Setting is saved!");
   }
 </script>
 
@@ -75,6 +79,7 @@
       <input type="number" bind:value={daysOld} />
       <div class="button-container">
         <button on:click={resetButtonClick}>Reset</button>
+        <button on:click={closePopup}>Close</button>
         <button on:click={saveButtonClick}>Save</button>
       </div>
     </div>
