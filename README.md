@@ -7,15 +7,37 @@ This project demonstrates the user interface for a conceptual smart trashcan on 
 
 The smart trashcan comes from a project for a class on Human Interfaces at the University of Cincinnati that asked us to create an UI for a smart object. We chose the trashcan because of its simple framework. Other ideas we had - backpack, bed, door - were scrapped due to their complexity. Additionally, despite its simplicity, we were easily able to come up with practical features to increase the complexity.
 
+## Implementation
+
+We divided the project into parts and worked on it in branches. Most of the code was able to be merged directly without trouble though. We kept in contact through a discord server and updated each other on our work.
+
+Procreate and another drawing app was used to create images. 
+
 ### Features [Include pictures and videos]
 
 - Sensing odor strength
   
 - Motion sensor
+![motion sensor DEMO](https://github.com/user-attachments/assets/c7b509cb-d847-41c4-a0a5-2204cee64627)
+
+This was created by a member of our group that had access to a motion sensor trashcan and knew how it worked. The motion sensor is its own set of buttons to free up space on the digital screen and to be always accessible. Generally, a motion sensor is made up of two buttons - one for open and one for close - and a light indicator of when motion has been detected. Because it is only two buttons, the guide for the buttons was minimalized to a box frame and an filled in box. The box frame meaning open and a filled in box for close. Even if the users didn't know what it meant, it was easy to click between them to see what they did. If the lid is open and the motion sensor is set off, the lid will stay open. 
+
+The lid switches between two images to demonstrate the lid opening and closing.
+
+![Smart_Trashcan_ClosedLid](https://github.com/user-attachments/assets/4793e810-3955-45fc-9e80-8e1dd5303856)
+
+![OpenTrashLid](https://github.com/user-attachments/assets/cfb5eb3b-83e9-4627-a774-9186cda866fd)
+
+Another member created the sideview to also show this with the automatic function to tie up the trash and push it out.
 
 - Reminder of trash day
-- Analytics of
-- 
+
+- Popups and Notifications
+  
+- Settings
+
+- Analytics
+  
 ## Design 
 
 Visually, the interface for the digital screen is enlarged and interactible on the left with the motion sensor and external controls below it. On the right are 2D illustrations of the trashcan in action.
@@ -29,17 +51,20 @@ Odor was added because it often indicated when the trash needed to be taken out.
 
 We all came up with our own sketches and discussed them in person, but we couldn't fully decide because we were missing something - a digital screen. 
 
-[sketch here]
+By Joey Yong
+![firsttrashsketch](https://github.com/user-attachments/assets/047e9597-bca4-49fb-858d-0007b2744a73)
 
 There had to be a digital screen for the assignment, so we later met on discord in the voice channel of a server and used the discord app, whiteboard, to collectively scribble on what the interface and trashcan would look like.
 
-[sketch here]
+![Screenshot 2024-10-22 195402](https://github.com/user-attachments/assets/82bc2dd7-8d8c-4189-aaf5-ca6b4fc8c951)
+
+![Screenshot 2024-10-22 195412](https://github.com/user-attachments/assets/f77b7a0d-baf8-4504-a758-293ff6eb1263)
 
 We were having trouble placing the screen, but we knew we wanted it on the lid. We didn't want put any features/controls anywhere besides the lid because it would make the simple trashcan unnessarily busy. There were suggestions of making the lid itself a monitor, but there were strong vetoes and feedback from people that it would crowd the top. Also, the screen would make the lid heavy and troublesome to maintain or not break. We then decided on a final sketch.
 
 ![Final_trashsketch](https://github.com/user-attachments/assets/c12ca9e9-2fd6-4256-9a95-a5dcd6df856a)
 
-We extended the front of the lid and put it at a slant so it could be looked at easier from other angles. 
+We extended the front of the lid and put it at a slant so it could be looked at easier from other angles. Initially the lid was the same color as the frame but there was some concern over not being able to tell the lid apart from the frame so the lid was darkened. The side view is a dark color because it's showing the inside of the trashcan not the outside. 
 
 ### Color Palette 
 
