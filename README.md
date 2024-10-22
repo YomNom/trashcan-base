@@ -19,14 +19,32 @@ The smart trashcan comes from a project for a class on Human Interfaces at the U
 ## Design 
 
 Visually, the interface for the digital screen is enlarged and interactible on the left with the motion sensor and external controls below it. On the right are 2D illustrations of the trashcan in action.
-The overhead of the lid are images created through Procreate and goes between two images based on when the lid is oopen or closed. On the lid, there's a placeholder on where the digital screen would be.
+The overhead of the lid are images created through Procreate and goes between two images based on when the lid is oopen or closed. On the lid, there's a placeholder on where the digital screen would be. 
+
+The general layout of the trashcan was found pretty early on in the sketching and brainstorming process of how to make a trashcan "smart". When coming up with ideas, we thought about the general characteristics of a trashcan: the capacity, the smell, the weight, trashday, age of trash. We also wanted to add a new feature that has been added to trashcans - motion sensors.
+
+Motion control was an instant add for contactless throwaway feature and being a new feature of trashcans. One of our group members had some of them in their apartment. You can also see them around the University of Cincinnati's campus.
+
+Odor was added because it often indicated when the trash needed to be taken out. Before thinking of a digital screen, we thought to put a light indicator on the lid to show if it was smelly i.e. it would glow once the stank went up to a certain level. We had the idea of putting in a mold detector, but decided the strength of the odor would be enough to tell the user the trash needed to be thrown out. Because of that, we used it as an external control to show that the screen would give alerts of when to throw the trash out.
+
+We all came up with our own sketches and discussed them in person, but we couldn't fully decide because we were missing something - a digital screen. 
+
+[sketch here]
+
+There had to be a digital screen for the assignment, so we later met on discord in the voice channel of a server and used the discord app, whiteboard, to collectively scribble on what the interface and trashcan would look like.
+
+[sketch here]
+
+We were having trouble placing the screen, but we knew we wanted it on the lid. We didn't want put any features/controls anywhere besides the lid because it would make the simple trashcan unnessarily busy. There were suggestions of making the lid itself a monitor, but there were strong vetoes and feedback from people that it would crowd the top. Also, the screen would make the lid heavy and troublesome to maintain or not break. We then decided on a final sketch
+
 ### Color Palette 
 
 
 
 ## Implementation
 
-## Interview
+## Interview![Final_trashsketch](https://github.com/user-attachments/assets/c12ca9e9-2fd6-4256-9a95-a5dcd6df856a)
+
 
 ## Side Quests
 
