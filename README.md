@@ -15,7 +15,7 @@ The smart trashcan comes from a project for a class on Human Interfaces at the U
 
 - Reminder of trash day
 - Analytics of
-
+- 
 ## Design 
 
 Visually, the interface for the digital screen is enlarged and interactible on the left with the motion sensor and external controls below it. On the right are 2D illustrations of the trashcan in action.
@@ -35,22 +35,37 @@ There had to be a digital screen for the assignment, so we later met on discord 
 
 [sketch here]
 
-We were having trouble placing the screen, but we knew we wanted it on the lid. We didn't want put any features/controls anywhere besides the lid because it would make the simple trashcan unnessarily busy. There were suggestions of making the lid itself a monitor, but there were strong vetoes and feedback from people that it would crowd the top. Also, the screen would make the lid heavy and troublesome to maintain or not break. We then decided on a final sketch
+We were having trouble placing the screen, but we knew we wanted it on the lid. We didn't want put any features/controls anywhere besides the lid because it would make the simple trashcan unnessarily busy. There were suggestions of making the lid itself a monitor, but there were strong vetoes and feedback from people that it would crowd the top. Also, the screen would make the lid heavy and troublesome to maintain or not break. We then decided on a final sketch.
 
-[Final_trashsketch](https://github.com/user-attachments/assets/c12ca9e9-2fd6-4256-9a95-a5dcd6df856a)
+![Final_trashsketch](https://github.com/user-attachments/assets/c12ca9e9-2fd6-4256-9a95-a5dcd6df856a)
+
+We extended the front of the lid and put it at a slant so it could be looked at easier from other angles. 
 
 ### Color Palette 
 
+We went with a sea green palette with an orange to contrast. Trashcans are usually green and the color is associated with being environmentally friendly. We mixed some blue in and lightened the color to be softer on the eyes. 
 
+## Interview
 
-## Implementation
+For interfiew and feedback, we asked friends and family.
+Our questions were: 
 
-## Interview!
-
-
+Are your trashcans opened or closed?
+- 2 people said they had open trashcans
+- 2 people said they had closed trashcans
+  
+Do any of your trashcans have motion sensors?
+- Only 1 person had a motions sensor trashcan
+  
+What inconveniences you about taking out the trash?
+- 3 people said they didn't like the task of tying up and throwing out their trashcan
+- 1 person said taking the trash out to the dumpster
+- 1 person initially said they didn't have any inconvenience but mentioned they took out their trash every saturday. 
+  
 ## Side Quests
 
 ## Future 
+
 
 ## Use of AI
 We are relatively new to svelte and javascript and utilized Github's copilot coding feature in VS, as well as chatGPT. It sped up the coding process by skipping past much of the lookup process and helped with debugging. 
