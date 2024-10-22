@@ -1,15 +1,15 @@
 <script>
-    import { odorLevel } from "./store.js";
+    import { OdorLevel } from "./store.js";
     import ButtonComponent from "./ButtonComponent.svelte";
     import plusIcon from "../assets/plus.svg";
     import minusIcon from "../assets/minus.svg";
 
     function increaseOdor() {
-        odorLevel.update((n) => Math.min(n + 10, 100));
+        OdorLevel.update((n) => Math.min(n + 10, 100));
     }
 
     function decreaseOdor() {
-        odorLevel.update((n) => Math.max(n - 10, 0));
+        OdorLevel.update((n) => Math.max(n - 10, 0));
     }
 </script>
 
@@ -19,7 +19,7 @@
         symbol={minusIcon}
         bgColor="#06A298"
     />
-    <span class="odor-level">Odor Level: {$odorLevel}</span>
+    <span class="odor-level">Odor Level: {$OdorLevel}</span>
     <ButtonComponent
         on:click={increaseOdor}
         symbol={plusIcon}

@@ -4,7 +4,11 @@
 
 <div class="frame">
     {#if !isLidOpen}
-        <img src="/Smart_Trashcan_ClosedLid.PNG" alt="Closed-lid" class="image" />
+        <img
+            src="/Smart_Trashcan_ClosedLid.png"
+            alt="Closed-lid"
+            class="image"
+        />
     {:else}
         <img src="/OpenTrashLid.PNG" alt="Open-lid" class="image" />
     {/if}

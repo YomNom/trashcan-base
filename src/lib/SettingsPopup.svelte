@@ -4,9 +4,11 @@
   export let onColorChange;
   export let trashDay = 5; // Default to Friday
   export let onTrashDayChange;
-
+  import { DaysOld } from "./store.js";
   let selectedColor = "#ffffff"; // Default color
   let selectedTrashDay;
+  let daysOld;
+  DaysOld.subscribe((value) => (daysOld = value));
 
   // Initialize selectedTrashDay when popup opens
   $: if (isOpen) {
@@ -22,21 +24,32 @@
     selectedTrashDay = parseInt(event.target.value); // Update the local value
     onTrashDayChange(selectedTrashDay); // Notify parent of the change
   }
+
+  function resetButtonClick() {
+    selectedColor = "#ffffff";
+    selectedTrashDay = 2;
+    DaysOld.set(0);
+  }
+
+  function saveButtonClick() {
+    DaysOld.set(daysOld);
+    closePopup();
+  }
 </script>
 
 {#if isOpen}
   <div class="popup-overlay">
     <div class="popup-content">
-      <h2>Settings</h2>
+      <h2 class="popup-title">Settings</h2>
       <!-- Color Picker -->
-      <p>Select a background color:</p>
+      <p class="label-text">Select a background color:</p>
       <input
         type="color"
         bind:value={selectedColor}
         on:change={handleColorChange}
       />
       <!-- Trash Day Selector -->
-      <p>Select Trash Day:</p>
+      <p class="label-text">Select Trash Day:</p>
       <select bind:value={selectedTrashDay} on:change={handleTrashDayChange}>
         <option value="0">Sunday</option>
         <option value="1">Monday</option>
@@ -46,8 +59,8 @@
         <option value="5">Friday</option>
         <option value="6">Saturday</option>
       </select>
-      <p>
-        Currently Selected: {[
+      <p class="selected-day">
+        Selected day: {[
           "Sunday",
           "Monday",
           "Tuesday",
@@ -57,7 +70,13 @@
           "Saturday",
         ][selectedTrashDay]}
       </p>
-      <button on:click={closePopup}>Close</button>
+
+      <p class="label-text">Set Days Old:</p>
+      <input type="number" bind:value={daysOld} />
+      <div class="button-container">
+        <button on:click={resetButtonClick}>Reset</button>
+        <button on:click={saveButtonClick}>Save</button>
+      </div>
     </div>
   </div>
 {/if}
@@ -76,20 +95,43 @@
     z-index: 1000;
   }
 
+  .popup-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: var(--text-color);
+  }
+
+  .label-text {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: var(--text-color);
+  }
+
   .popup-content {
     background-color: white;
     border-radius: 8px;
-    padding: 20px;
-    width: 500px;
-    max-width: 90%;
+    min-width: 500px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    padding: 10px;
+  }
+
+  .selected-day {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: var(--trashday-text-color);
   }
 
   button {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: var(--device-ui-container-color);
     color: white;
     border: none;
     border-radius: 4px;
@@ -97,6 +139,11 @@
   }
 
   button:hover {
-    background-color: #0056b3;
+    background-color: var(--device-ui-container-color);
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
   }
 </style>
