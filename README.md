@@ -31,13 +31,29 @@ The lid switches between two images to demonstrate the lid opening and closing.
 
 Another member created the sideview to also show this with the automatic function to tie up the trash and push it out.
 
+For the Reminder of trash day box as well as the three buttons, thoese feathures were created to allow the user to have more control and modification on the trashcan UI.
+
+
 - Reminder of trash day
+- 
+The Reminder of trashcan is placed on the right side of the UI screen for better visiblity, it has a countdown for how many days until the user-set trash day, the Reminder will also adjust according to the users selection of trash day and send out notification when the trashday is being updated.
 
 - Popups and Notifications
+
+Pop ups  will activate once user click any of the buttons or change the trash day. in the Notification, it stores all the previous trashday updates to help user keep track of previous activities. 
   
 - Settings
 
+The settings button allow user to change the UI's color as well as changing the trash date.
+
 - Analytics
+
+The Analytics will pop up once the Analytics button is pressed, It will show a mock graph of trash weight and times trash taken out every week.
+<img width="441" alt="Screen Shot 2024-10-22 at 9 55 41 PM" src="https://github.com/user-attachments/assets/394674e1-aee3-498b-a7bf-85707832ba71">
+
+
+
+
   
 ## Design 
 
