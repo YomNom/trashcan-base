@@ -78,7 +78,7 @@ Our questions were:
 
 Are your trashcans opened or closed?
 - 2 people said they had open trashcans
-- 2 people said they had closed trashcans
+- 3 people said they had closed trashcans
   
 Do any of your trashcans have motion sensors?
 - Only 1 person had a motions sensor trashcan
