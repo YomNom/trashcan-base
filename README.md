@@ -16,7 +16,20 @@ Procreate and another drawing app was used to create images.
 ### Features [Include pictures and videos]
 
 - Sensing odor strength
-  
+The trash can is designed to display the odor strength level inside the trash can by odor sensor.
+Level 1: Acceptable (Low Odor): The odor is minimal and tolerable, the trash bag does not need to be replaced.
+  Sensor Range: 0-33
+Level 2: Medium (Moderate Odor): The odor is noticeable and somewhat unpleasant; the trash bag should be replaced soon.
+  Sensor Range: 34-67
+Level 3: High (Severe Odor): The odor is heavy and unpleasant, the trash bag must be replaced immediately.
+  Sensor Range: 67-100
+At Level 2, a notification will be sent out on the screen to remind user to put the trash away. 
+At level 3, another notification will be alerted (with sound) to indicating that the trash bag should be replaced immediately!
+
+In this design we have a odor strength control to increase or decrease the odor strength level inside the trash bag. By clicking on these buttons, you can increase or decrease the odor level stimulation by 10.
+
+https://github.com/user-attachments/assets/a5cec6dc-0a70-4811-b60c-1ee3b55e18a3
+
 - Motion sensor
 
 <video src="https://github.com/user-attachments/assets/c7b509cb-d847-41c4-a0a5-2204cee64627"></video>
@@ -35,26 +48,40 @@ For the Reminder of trash day box as well as the three buttons, thoese feathures
 
 
 - Reminder of trash day
-- 
+  
 The Reminder of trashcan is placed on the right side of the UI screen for better visiblity, it has a countdown for how many days until the user-set trash day, the Reminder will also adjust according to the users selection of trash day and send out notification when the trashday is being updated.
 
 - Popups and Notifications
 
-Pop ups  will activate once user click any of the buttons or change the trash day. in the Notification, it stores all the previous trashday updates to help user keep track of previous activities. 
-  
+Pop ups  will activate once user click any of the buttons or change the trash day. There will always be a close button to close the notification. In the future, we want to develop it that the pop ups will automatically disappear after some timeout.
+
+In the Notification, it stores all the previous trashday updates to help user keep track of previous activities. There is a 'Delete All' button to clear all the old notifications recorded in the memory. 
+
+https://github.com/user-attachments/assets/6099bc8e-3d6a-40b6-a7e6-21f9eb1610e
+
 - Settings
 
-The settings button allow user to change the UI's color as well as changing the trash date.
+The settings button allow user to change the UI's color as well as changing the trash date or set the "age" of the trash days.
+Setting allows you to adjust the default setting to your wanted one. There is a "Reset Button" for resetting everything back to default state. "Close" button is for just closing without any changes. If users make any changes, "save" button will be pressed and a notification, which indicates that changes are save, will appear at the end of the process.
+
+https://github.com/user-attachments/assets/fa1b38e7-8520-4882-b49f-984d9887e217
+
+
+https://github.com/user-attachments/assets/424c0265-9596-4c75-ba36-09e0f863b5b2
+
 
 - Analytics
 
 The Analytics will pop up once the Analytics button is pressed, It will show a mock graph of trash weight and times trash taken out every week.
 <img width="441" alt="Screen Shot 2024-10-22 at 9 55 41 PM" src="https://github.com/user-attachments/assets/394674e1-aee3-498b-a7bf-85707832ba71">
 
+- Automatic Trashbag Package
+
+When press on the "Trashcan" icon button, the trash bag will be automatically sealed inside the trashcan before being pushed out of the trashcan and lifted up a little bit above the ground for the users to take away.
+
+https://github.com/user-attachments/assets/dc1af57d-c88b-4270-aa2f-510a4e6920e7
 
 
-
-  
 ## Design 
 
 Visually, the interface for the digital screen is enlarged and interactible on the left with the motion sensor and external controls below it. On the right are 2D illustrations of the trashcan in action.
