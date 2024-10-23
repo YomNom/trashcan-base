@@ -5,11 +5,18 @@ This project demonstrates the user interface for a conceptual smart trashcan on 
 
 ## Why this project was made?
 
-The smart trashcan comes from a project for a class on Human Interfaces at the University of Cincinnati that asked us to create an UI for a smart object. We chose the trashcan because of its simple framework. Other ideas we had - backpack, bed, door - were scrapped due to their complexity. Additionally, despite its simplicity, we were easily able to come up with practical features to increase the complexity.
+The smart trashcan comes from a project for a class on Human Interfaces at the University of Cincinnati that asked us to create an UI for a smart object. We chose the trashcan because of its simple framework. Other ideas we had - backpack, bed, door - were scrapped due to their complexity. Additionally, despite its simplicity, we could easily come up with practical features to increase the complexity.
+
+## Assumptions About the Smart Trash Can
+
+Motion Sensor for Hands-Free Use: The smart trash can is equipped with a motion sensor that detects the user's hand when they approach, enabling the lid to open automatically.
+Odor Sensor: The smart trash can includes an odor sensor that monitors the smell of the trash. When the odor reaches a certain threshold, indicating the trash is likely full or needs to be taken out, the can will notify the user through a display screen or mobile notification.
+Trash Day Reminder: The trash can has a built-in feature where users can input their trash collection schedule. This feature sends reminders, either via a display screen on the trash can or through a mobile app, informing users of upcoming trash collection days.
+Display Screen for Smart Analytics: A small display screen is located on the trash can's lid, providing real-time information about the trash can's status, such as how full it is, odor levels, and reminders for trash day. This screen offers users quick, at-a-glance access to important data.
 
 ## Affordances
 
-Size: Our smart trash can is medium-sized (10 - 20 gallons)designed for use in households or offices. It is large enough to hold daily or weekly trash but compact enough to fit in designated spaces like a kitchen or corner of a room.
+Size: Our smart trash can is medium-sized (10 - 20 gallons) and designed for use in households or offices. It is large enough to hold daily or weekly trash but compact enough to fit in designated spaces like a kitchen or corner of a room.
 Portability: It is mostly fixed but can be moved if necessary. Users can carry the trash can by holding it by the sides or by holding the handles.
 Stability: it can stand upright on the floor using its base. 
 
