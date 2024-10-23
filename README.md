@@ -89,8 +89,11 @@ There had to be a digital screen for the assignment, so we later met on discord 
 ![Screenshot 2024-10-22 195402](https://github.com/user-attachments/assets/82bc2dd7-8d8c-4189-aaf5-ca6b4fc8c951)
 
 ![Screenshot 2024-10-22 195412](https://github.com/user-attachments/assets/f77b7a0d-baf8-4504-a758-293ff6eb1263)
+![Scan 22 Oct 24 21·19·09 1729646408371](https://github.com/user-attachments/assets/23a4059e-7487-4821-9050-f7c0178c175a)
 
 We were having trouble placing the screen, but we knew we wanted it on the lid. We didn't want put any features/controls anywhere besides the lid because it would make the simple trashcan unnessarily busy. There were suggestions of making the lid itself a monitor, but there were strong vetoes and feedback from people that it would crowd the top. Also, the screen would make the lid heavy and troublesome to maintain or not break. We then decided on a final sketch.
+![Scan 22 Oct 24 21·19·09 1729646408370](https://github.com/user-attachments/assets/a52c333a-f3f1-47fa-b496-7b8feeabf247)
+![Scan 22 Oct 24 21·19·09 1729646408369](https://github.com/user-attachments/assets/c4b450a6-988f-4858-90c7-d3d4e236bee0)
 
 ![Final_trashsketch](https://github.com/user-attachments/assets/c12ca9e9-2fd6-4256-9a95-a5dcd6df856a)
 
