@@ -18,7 +18,8 @@ Procreate and another drawing app was used to create images.
 - Sensing odor strength
   
 - Motion sensor
-![motion sensor DEMO](https://github.com/user-attachments/assets/c7b509cb-d847-41c4-a0a5-2204cee64627)
+
+<video src="https://github.com/user-attachments/assets/c7b509cb-d847-41c4-a0a5-2204cee64627"></video>
 
 This was created by a member of our group that had access to a motion sensor trashcan and knew how it worked. The motion sensor is its own set of buttons to free up space on the digital screen and to be always accessible. Generally, a motion sensor is made up of two buttons - one for open and one for close - and a light indicator of when motion has been detected. Because it is only two buttons, the guide for the buttons was minimalized to a box frame and an filled in box. The box frame meaning open and a filled in box for close. Even if the users didn't know what it meant, it was easy to click between them to see what they did. If the lid is open and the motion sensor is set off, the lid will stay open. 
 
