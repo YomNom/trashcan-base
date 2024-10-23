@@ -110,11 +110,10 @@ When press on the "Trashcan" icon button, the trash bag will be automatically se
 
 https://github.com/user-attachments/assets/dc1af57d-c88b-4270-aa2f-510a4e6920e7
 
-
 ## Design 
 
-Visually, the interface for the digital screen is enlarged and interactible on the left with the motion sensor and external controls below it. On the right are 2D illustrations of the trashcan in action.
-The overhead of the lid are images created through Procreate and goes between two images based on when the lid is oopen or closed. On the lid, there's a placeholder on where the digital screen would be. 
+Visually, the interface for the digital screen is enlarged and interactive on the left with the motion sensor and external controls below it. On the right are 2D illustrations of the trashcan in action.
+The overhead of the lid are images created through Procreate and go between two images based on when the lid is open or closed. On the lid, there's a placeholder on where the digital screen would be. 
 
 The general layout of the trashcan was found pretty early on in the sketching and brainstorming process of how to make a trashcan "smart". When coming up with ideas, we thought about the general characteristics of a trashcan: the capacity, the smell, the weight, trashday, age of trash. We also wanted to add a new feature that has been added to trashcans - motion sensors.
 
@@ -141,6 +140,9 @@ We were having trouble placing the screen, but we knew we wanted it on the lid. 
 ![Final_trashsketch](https://github.com/user-attachments/assets/c12ca9e9-2fd6-4256-9a95-a5dcd6df856a)
 
 We extended the front of the lid and put it at a slant so it could be looked at easier from other angles. Initially the lid was the same color as the frame but there was some concern over not being able to tell the lid apart from the frame so the lid was darkened. The side view is a dark color because it's showing the inside of the trashcan not the outside. 
+### Story Board
+
+![Scan 22 Oct 24 21·19·09 1729653926342](https://github.com/user-attachments/assets/bfe3b564-9320-45a6-ad32-b820d568f076)
 
 ### Color Palette 
 ![Smart Trash Can Color Palette](https://github.com/user-attachments/assets/db4c2897-b8e2-46d6-b3f1-2e753f5a210e)
