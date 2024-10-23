@@ -68,6 +68,8 @@ We were having trouble placing the screen, but we knew we wanted it on the lid. 
 We extended the front of the lid and put it at a slant so it could be looked at easier from other angles. Initially the lid was the same color as the frame but there was some concern over not being able to tell the lid apart from the frame so the lid was darkened. The side view is a dark color because it's showing the inside of the trashcan not the outside. 
 
 ### Color Palette 
+![Smart Trash Can Color Palette](https://github.com/user-attachments/assets/db4c2897-b8e2-46d6-b3f1-2e753f5a210e)
+
 
 We went with a sea green palette with an orange to contrast. Trashcans are usually green and the color is associated with being environmentally friendly. We mixed some blue in and lightened the color to be softer on the eyes. 
 
