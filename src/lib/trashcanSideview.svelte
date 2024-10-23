@@ -16,7 +16,7 @@
 >
     <!-- Trashcan lid -->
     <!-- Trashcan lid (right trapezoid, reversed direction) -->
-    <path d="M20 50 L180 50 L180 20 L40 20 Z" fill="var(--icon-border-color)" />
+    <path d="M20 50 L180 50 L180 20 L40 20 Z" fill="#9ff6e2" />
     <line
         x1="20"
         y1="50"
@@ -26,13 +26,7 @@
         stroke-width="2"
     />
     <!-- Trashcan body -->
-    <rect
-        x="20"
-        y="50"
-        width="160"
-        height="200"
-        fill="var(--icon-border-color)"
-    />
+    <rect x="20" y="50" width="160" height="200" fill="#9ff6e2" />
 
     <!-- Trash lines (optional, for visual effect) -->
     <line
