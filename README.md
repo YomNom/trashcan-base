@@ -46,6 +46,7 @@ Pop ups  will activate once user click any of the buttons or change the trash da
 - Settings
 
 The settings button allow user to change the UI's color as well as changing the trash date and days old, the User could then either save the changes or reset the settings. 
+
 <img width="416" alt="Screen Shot 2024-10-22 at 10 38 23 PM" src="https://github.com/user-attachments/assets/b504c05d-3b8e-48e4-8a63-0dd2abacfe28">
 
 
