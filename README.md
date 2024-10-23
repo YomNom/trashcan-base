@@ -53,21 +53,7 @@ The Reminder of trashcan is placed on the right side of the UI screen for better
 
 - Popups and Notifications
 
-Pop ups  will activate once user click any of the buttons or change the trash day. There will always be a close button to close the notification. In the future, we want to develop it that the pop ups will automatically disappear after some timeout.
 
-In the Notification, it stores all the previous trashday updates to help user keep track of previous activities. There is a 'Delete All' button to clear all the old notifications recorded in the memory. 
-
-https://github.com/user-attachments/assets/6099bc8e-3d6a-40b6-a7e6-21f9eb1610e
-
-- Settings
-
-The settings button allow user to change the UI's color as well as changing the trash date or set the "age" of the trash days.
-Setting allows you to adjust the default setting to your wanted one. There is a "Reset Button" for resetting everything back to default state. "Close" button is for just closing without any changes. If users make any changes, "save" button will be pressed and a notification, which indicates that changes are save, will appear at the end of the process.
-
-https://github.com/user-attachments/assets/fa1b38e7-8520-4882-b49f-984d9887e217
-
-
-https://github.com/user-attachments/assets/424c0265-9596-4c75-ba36-09e0f863b5b2
 
 
 - Analytics
