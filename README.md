@@ -7,6 +7,8 @@ This project demonstrates the user interface for a conceptual smart trashcan on 
 
 The smart trashcan comes from a project for a class on Human Interfaces at the University of Cincinnati that asked us to create an UI for a smart object. We chose the trashcan because of its simple framework. Other ideas we had - backpack, bed, door - were scrapped due to their complexity. Additionally, despite its simplicity, we were easily able to come up with practical features to increase the complexity.
 
+## Affordances
+
 ## Implementation
 
 We divided the project into parts and worked on it in branches. Most of the code was able to be merged directly without trouble though. We kept in contact through a discord server and updated each other on our work.
