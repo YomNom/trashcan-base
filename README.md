@@ -52,7 +52,7 @@ Odor was added because it often indicated when the trash needed to be taken out.
 
 We all came up with our own sketches and discussed them in person, but we couldn't fully decide because we were missing something - a digital screen. 
 
-By Joey Yong
+By Joey Yong - "I wanted to separate the features between the trashcan and the webpage, things like weight and capacity could be looked at on an app with minimal controls on the trashcan".
 ![firsttrashsketch](https://github.com/user-attachments/assets/047e9597-bca4-49fb-858d-0007b2744a73)
 
 There had to be a digital screen for the assignment, so we later met on discord in the voice channel of a server and used the discord app, whiteboard, to collectively scribble on what the interface and trashcan would look like.
