@@ -1,7 +1,7 @@
 # Smart Trashcan Interface (https://trashcan-base.vercel.app/) 
 ### By Joey Yong, Du Nguyen, Huu Quang Nhat Nguyen, Ming Zeng
 
-This project demonstrates the user interface for a conceptual smart trashcan on a website using svelte & javascript. "Physically", the smart trashcan has a digital screen and motion sensor on the lid. Hosted by vercel, the website has an interactible representation of the screen and the motion sensor, along with a 2D model of the trashcan lid. Logically, the smart trashcan will assist the user by reminding them to take out the trash around trashday and notify them how dirty their trash is based on the level of smell. The trashcan also bags up trash and takes it out.
+This project demonstrates the user interface for a conceptual smart trashcan on a website using Svelte & JavaScript. "Physically", the smart trashcan has a digital screen and motion sensor on the lid. Hosted by Vercel, the website has an interactive representation of the screen and the motion sensor, along with a 2D model of the trashcan lid. Logically, the smart trashcan will assist the user by reminding them to take out the trash around trash day and notify them how dirty their trash is based on the level of smell. The trashcan also bags up trash and takes it out.
 
 ## Why this project was made?
 
@@ -9,11 +9,38 @@ The smart trashcan comes from a project for a class on Human Interfaces at the U
 
 ## Affordances
 
+Size: Our smart trash can is medium-sized (10 - 20 gallons)designed for use in households or offices. It is large enough to hold daily or weekly trash but compact enough to fit in designated spaces like a kitchen or corner of a room.
+Portability: It is mostly fixed but can be moved if necessary. Users can carry the trash can by holding it by the sides or by holding the handles.
+Stability: it can stand upright on the floor using its base. 
+
+The primary use of the smart trash can is to track the smart analytics of odor, and trash thrown away and remind the user to take out trash on designated trash day. 
+Affording Trash Disposal: The primary affordance is for users to dispose of trash easily.
+Affording Notification: It notifies users about trash collection day and when the trash can is full on its display screen. 
+Affording Hands-Free Use: Sensors in the trash can afford touchless interaction, and automatic lid opening when the user's hand is detected by the sensors.
+
+## User Needs and Design Requirements
+
+### User Needs 
+
+1. Users need hands-free interaction to avoid contact with the trash can.
+2. Users need to be reminded when trash day is approaching.
+3. Users need to know when the trash can is full or nearing capacity.
+5. Users may want to track their waste generation for environmental purposes.
+6. Users may want to integrate the trash can with their smart home systems (Internet of Things, through the use of a smartphone)
+
+### Design Requirements
+
+Hands-Free Operation: Incorporate a motion sensor to open the lid automatically.
+Trash Day Reminder: Build a feature that allows users to input their trash collection schedule onto the trash can itself, which will send reminders.
+Display Screen: Build a display screen on the lid of the trash can to notify the users and display smart analytics regarding the trash within the trash can.
+Odor Sensor: Add a sensor that can detect when the trash can is full or when the trash needs to be taken out based on smell and send a notification.
+Waste Tracking: Create a waste tracking feature in the app that records how often the trash is emptied, giving insights into waste habits.
+
 ## Implementation
 
-We divided the project into parts and worked on it in branches. Most of the code was able to be merged directly without trouble though. We kept in contact through a discord server and updated each other on our work.
+We divided the project into parts and worked on it in branches. Most of the code was able to be merged directly without trouble though. We kept in contact through a Discord server and updated each other on our work.
 
-Procreate and another drawing app was used to create images. 
+Procreate and another drawing app were used to create images. 
 
 ### Features [Include pictures and videos]
 
@@ -123,7 +150,7 @@ We went with a sea green palette with an orange to contrast. Trashcans are usual
 
 ## Interview
 
-For interfiew and feedback, we asked friends and family.
+For interview and feedback, we asked friends and family.
 Our questions were: 
 
 Are your trashcans opened or closed?
@@ -131,12 +158,12 @@ Are your trashcans opened or closed?
 - 3 people said they had closed trashcans
   
 Do any of your trashcans have motion sensors?
-- Only 1 person had a motions sensor trashcan
+- Only 1 person had a motion sensor trashcan
   
 What inconveniences you about taking out the trash?
 - 3 people said they didn't like the task of tying up and throwing out their trashcan
 - 1 person said taking the trash out to the dumpster
-- 1 person initially said they didn't have any inconvenience but mentioned they took out their trash every saturday. 
+- 1 person initially said they didn't have any inconvenience but mentioned they took out their trash every Saturday.
 
 ## Future 
 We might polish up some features and add some more controls we weren't able to in the time frame such as a day counter - to act like days going by. 
