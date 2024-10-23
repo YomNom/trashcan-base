@@ -40,11 +40,14 @@ The Reminder of trashcan is placed on the right side of the UI screen for better
 
 - Popups and Notifications
 
-Pop ups  will activate once user click any of the buttons or change the trash day. in the Notification, it stores all the previous trashday updates to help user keep track of previous activities. 
-  
+Pop ups  will activate once user click any of the buttons or change the trash day. in the Notification, it stores all the previous trashday updates to help user keep track of previous activities, the user could also select if he/she wants to delete all previous trash history.
+  <img width="352" alt="Screen Shot 2024-10-22 at 10 39 38 PM" src="https://github.com/user-attachments/assets/95cec568-f948-40b9-ab67-e933efe65d37">
+
 - Settings
 
-The settings button allow user to change the UI's color as well as changing the trash date.
+The settings button allow user to change the UI's color as well as changing the trash date and days old, the User could then either save the changes or reset the settings. 
+<img width="416" alt="Screen Shot 2024-10-22 at 10 38 23 PM" src="https://github.com/user-attachments/assets/b504c05d-3b8e-48e4-8a63-0dd2abacfe28">
+
 
 - Analytics
 
