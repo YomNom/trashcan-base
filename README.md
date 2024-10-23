@@ -87,11 +87,10 @@ What inconveniences you about taking out the trash?
 - 3 people said they didn't like the task of tying up and throwing out their trashcan
 - 1 person said taking the trash out to the dumpster
 - 1 person initially said they didn't have any inconvenience but mentioned they took out their trash every saturday. 
-  
-## Side Quests
 
 ## Future 
-
+We might polish up some features and add some more controls we weren't able to in the time frame such as a day counter - to act like days going by. 
+We would like to add a mold sensor and increase the amount of settings. Also, we would like to add trash and have our 2D model show trash being added.
 
 ## Use of AI
 We are relatively new to svelte and javascript and utilized Github's copilot coding feature in VS, as well as chatGPT. It sped up the coding process by skipping past much of the lookup process and helped with debugging. 
