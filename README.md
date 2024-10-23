@@ -7,13 +7,6 @@ This project demonstrates the user interface for a conceptual smart trashcan on 
 
 The smart trashcan comes from a project for a class on Human Interfaces at the University of Cincinnati that asked us to create an UI for a smart object. We chose the trashcan because of its simple framework. Other ideas we had - backpack, bed, door - were scrapped due to their complexity. Additionally, despite its simplicity, we could easily come up with practical features to increase the complexity.
 
-## Assumptions About the Smart Trash Can
-
-Motion Sensor for Hands-Free Use: The smart trash can is equipped with a motion sensor that detects the user's hand when they approach, enabling the lid to open automatically.
-Odor Sensor: The smart trash can includes an odor sensor that monitors the smell of the trash. When the odor reaches a certain threshold, indicating the trash is likely full or needs to be taken out, the can will notify the user through a display screen or mobile notification.
-Trash Day Reminder: The trash can has a built-in feature where users can input their trash collection schedule. This feature sends reminders, either via a display screen on the trash can or through a mobile app, informing users of upcoming trash collection days.
-Display Screen for Smart Analytics: A small display screen is located on the trash can's lid, providing real-time information about the trash can's status, such as how full it is, odor levels, and reminders for trash day. This screen offers users quick, at-a-glance access to important data.
-
 ## Affordances
 
 Size: Our smart trash can is medium-sized (10 - 20 gallons) and designed for use in households or offices. It is large enough to hold daily or weekly trash but compact enough to fit in designated spaces like a kitchen or corner of a room.
@@ -24,6 +17,44 @@ The primary use of the smart trash can is to track the smart analytics of odor, 
 Affording Trash Disposal: The primary affordance is for users to dispose of trash easily.
 Affording Notification: It notifies users about trash collection day and when the trash can is full on its display screen. 
 Affording Hands-Free Use: Sensors in the trash can afford touchless interaction, and automatic lid opening when the user's hand is detected by the sensors.
+
+## Interviews and Answers Summary
+
+For interviews and feedback, we asked friends and family.
+Our questions were: 
+
+Are your trashcans opened or closed?
+- 2 people said they had open trashcans
+- 3 people said they had closed trashcans
+  
+Do any of your trashcans have motion sensors?
+- Only 1 person had a motion sensor trashcan
+  
+What inconveniences you about taking out the trash?
+- 3 people said they didn't like the task of tying up and throwing out their trashcan
+- 1 person said taking the trash out to the dumpster
+- 1 person initially said they didn't have any inconvenience but mentioned they took out their trash every Saturday.
+
+- Interview Questions that were conducted through verbal research by Du Nguyen:
+
+1. What do you find frustrating or inconvenient about using your current trash can?
+2. How often do you empty your trash can, and do you ever forget to take it out on trash day?
+3. What kind of visual cue or notification method you would prefer for the smart trash can when it is time to take out the trash? 
+4. Would you prefer a trash can that opens automatically when you approach it, or do you prefer manually opening it?
+5. If your trash can notify you about something, what would you care about the most?
+6. Would you be interested in a feature that tracks how much waste you generate over time?
+
+Summary of the answers:
+Person 1: He often forgets to take out the trash on trash day, only take out when it is full or really smelly. He prefers to have a strong visual cue or audio that makes him take out the trash on a designated trash day at his apartment.
+Person 2: He takes out the trash twice a week to prevent the smell and the food from rotting in the trash can. He is extremely conscious of his living condition and he thinks that having the total weight of the trash he has taken out would be a great idea to know.
+Person 3: She really does not like to touch the trash bag whenever she opens it, if the trash can automatically opens, tie up the bag for her, and then take it out by itself it would be nice. She is afraid of touching the dirty trash and its smell and always prefers not to have any smell at all. 
+
+## Assumptions About the Smart Trash Can
+
+Motion Sensor for Hands-Free Use: The smart trash can is equipped with a motion sensor that detects the user's hand when they approach, enabling the lid to open automatically.
+Odor Sensor: The smart trash can includes an odor sensor that monitors the smell of the trash. When the odor reaches a certain threshold, indicating the trash is likely full or needs to be taken out, the can will notify the user through a display screen or mobile notification.
+Trash Day Reminder: The trash can has a built-in feature where users can input their trash collection schedule. This feature sends reminders, either via a display screen on the trash can or through a mobile app, informing users of upcoming trash collection days.
+Display Screen for Smart Analytics: A small display screen is located on the trash can's lid, providing real-time information about the trash can's status, such as how full it is, odor levels, and reminders for trash day. This screen offers users quick, at-a-glance access to important data.
 
 ## User Needs and Design Requirements
 
@@ -160,24 +191,7 @@ We extended the front of the lid and put it at a slant so it could be looked at 
 ![Smart Trash Can Color Palette](https://github.com/user-attachments/assets/db4c2897-b8e2-46d6-b3f1-2e753f5a210e)
 
 
-We went with a sea green palette with an orange to contrast. Trashcans are usually green and the color is associated with being environmentally friendly. We mixed some blue in and lightened the color to be softer on the eyes. 
-
-## Interview
-
-For interview and feedback, we asked friends and family.
-Our questions were: 
-
-Are your trashcans opened or closed?
-- 2 people said they had open trashcans
-- 3 people said they had closed trashcans
-  
-Do any of your trashcans have motion sensors?
-- Only 1 person had a motion sensor trashcan
-  
-What inconveniences you about taking out the trash?
-- 3 people said they didn't like the task of tying up and throwing out their trashcan
-- 1 person said taking the trash out to the dumpster
-- 1 person initially said they didn't have any inconvenience but mentioned they took out their trash every Saturday.
+We went with a sea green palette with an orange to contrast. Trashcans are usually green and the color is associated with being environmentally friendly. We mixed some blue in and lightened the color to be softer on the eyes.
 
 ## Future 
 We might polish up some features and add some more controls we weren't able to in the time frame such as a day counter - to act like days going by. 
