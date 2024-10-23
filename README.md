@@ -35,7 +35,7 @@ What inconveniences you about taking out the trash?
 - 1 person said taking the trash out to the dumpster
 - 1 person initially said they didn't have any inconvenience but mentioned they took out their trash every Saturday.
 
-- Interview Questions that were conducted through verbal research by Du Nguyen:
+Interview Questions that were conducted through verbal research by Du Nguyen:
 
 1. What do you find frustrating or inconvenient about using your current trash can?
 2. How often do you empty your trash can, and do you ever forget to take it out on trash day?
@@ -45,9 +45,9 @@ What inconveniences you about taking out the trash?
 6. Would you be interested in a feature that tracks how much waste you generate over time?
 
 Summary of the answers:
-Person 1: He often forgets to take out the trash on trash day, only take out when it is full or really smelly. He prefers to have a strong visual cue or audio that makes him take out the trash on a designated trash day at his apartment.
-Person 2: He takes out the trash twice a week to prevent the smell and the food from rotting in the trash can. He is extremely conscious of his living condition and he thinks that having the total weight of the trash he has taken out would be a great idea to know.
-Person 3: She really does not like to touch the trash bag whenever she opens it, if the trash can automatically opens, tie up the bag for her, and then take it out by itself it would be nice. She is afraid of touching the dirty trash and its smell and always prefers not to have any smell at all. 
+- Person 1: He often forgets to take out the trash on trash day, only take out when it is full or really smelly. He prefers to have a strong visual cue or audio that makes him take out the trash on a designated trash day at his apartment.
+- Person 2: He takes out the trash twice a week to prevent the smell and the food from rotting in the trash can. He is extremely conscious of his living condition and he thinks that having the total weight of the trash he has taken out would be a great idea to know.
+- Person 3: She really does not like to touch the trash bag whenever she opens it, if the trash can automatically opens, tie up the bag for her, and then take it out by itself it would be nice. She is afraid of touching the dirty trash and its smell and always prefers not to have any smell at all. 
 
 ## Assumptions About the Smart Trash Can
 
@@ -73,6 +73,51 @@ Trash Day Reminder: Build a feature that allows users to input their trash colle
 Display Screen: Build a display screen on the lid of the trash can to notify the users and display smart analytics regarding the trash within the trash can.
 Odor Sensor: Add a sensor that can detect when the trash can is full or when the trash needs to be taken out based on smell and send a notification.
 Waste Tracking: Create a waste tracking feature in the app that records how often the trash is emptied, giving insights into waste habits.
+
+## Designs and Sketches of the Smart Trash Can
+
+Visually, the interface for the digital screen is enlarged and interactive on the left with the motion sensor and external controls below it. On the right are 2D illustrations of the trashcan in action.
+The overhead of the lid are images created through Procreate and go between two images based on when the lid is open or closed. On the lid, there's a placeholder on where the digital screen would be. 
+
+The general layout of the trashcan was found pretty early on in the sketching and brainstorming process of how to make a trashcan "smart". When coming up with ideas, we thought about the general characteristics of a trashcan: the capacity, the smell, the weight, trashday, age of trash. We also wanted to add a new feature that has been added to trashcans - motion sensors.
+
+Motion control was an instant add for contactless throwaway feature and being a new feature of trashcans. One of our group members had some of them in their apartment. You can also see them around the University of Cincinnati's campus.
+
+Odor was added because it often indicated when the trash needed to be taken out. Before thinking of a digital screen, we thought to put a light indicator on the lid to show if it was smelly i.e. it would glow once the stank went up to a certain level. We had the idea of putting in a mold detector, but decided the strength of the odor would be enough to tell the user the trash needed to be thrown out. Because of that, we used it as an external control to show that the screen would give alerts of when to throw the trash out.
+
+We all came up with our own sketches and discussed them in person, but we couldn't fully decide because we were missing something - a digital screen. 
+
+By Joey Yong - "I wanted to separate the features between the trashcan and the webpage, things like weight and capacity could be looked at on an app with minimal controls on the trashcan".
+![firsttrashsketch](https://github.com/user-attachments/assets/047e9597-bca4-49fb-858d-0007b2744a73)
+
+There had to be a digital screen for the assignment, so we later met on discord in the voice channel of a server and used the discord app, whiteboard, to collectively scribble on what the interface and trashcan would look like.
+
+![Screenshot 2024-10-22 195402](https://github.com/user-attachments/assets/82bc2dd7-8d8c-4189-aaf5-ca6b4fc8c951)
+
+![Screenshot 2024-10-22 195412](https://github.com/user-attachments/assets/f77b7a0d-baf8-4504-a758-293ff6eb1263)
+![Scan 22 Oct 24 21·19·09 1729646408371](https://github.com/user-attachments/assets/23a4059e-7487-4821-9050-f7c0178c175a)
+
+We were having trouble placing the screen, but we knew we wanted it on the lid. We didn't want put any features/controls anywhere besides the lid because it would make the simple trashcan unnecessarily busy. There were suggestions of making the lid itself a monitor, but there were strong vetoes and feedback from people that it would crowd the top. Also, the screen would make the lid heavy and troublesome to maintain or not break. We then decided on a final sketch.
+![Scan 22 Oct 24 21·19·09 1729646408370](https://github.com/user-attachments/assets/a52c333a-f3f1-47fa-b496-7b8feeabf247)
+![Scan 22 Oct 24 21·19·09 1729646408369](https://github.com/user-attachments/assets/c4b450a6-988f-4858-90c7-d3d4e236bee0)
+
+![Final_trashsketch](https://github.com/user-attachments/assets/c12ca9e9-2fd6-4256-9a95-a5dcd6df856a)
+
+We extended the front of the lid and put it at a slant so it could be looked at more easily from other angles. Initially, the lid was the same color as the frame but there was some concern over not being able to tell the lid apart from the frame so the lid was darkened. The side view is a dark color because it shows the inside of the trashcan, not the outside. 
+
+### Hybrid Sketch
+
+![Screenshot_20241022_233202_Gallery](https://github.com/user-attachments/assets/51250d9a-d837-4888-88be-f3ea53e847eb)
+
+### Story Board
+
+![Scan 22 Oct 24 21·19·09 1729653926342](https://github.com/user-attachments/assets/bfe3b564-9320-45a6-ad32-b820d568f076)
+
+### Color Palette 
+![Smart Trash Can Color Palette](https://github.com/user-attachments/assets/db4c2897-b8e2-46d6-b3f1-2e753f5a210e)
+
+
+We went with a sea green palette with an orange to contrast. Trashcans are usually green and the color is associated with being environmentally friendly. We mixed some blue in and lightened the color to be softer on the eyes.
 
 ## Implementation
 
@@ -148,50 +193,7 @@ When press on the "Trashcan" icon button, the trash bag will be automatically se
 
 https://github.com/user-attachments/assets/dc1af57d-c88b-4270-aa2f-510a4e6920e7
 
-## Design 
 
-Visually, the interface for the digital screen is enlarged and interactive on the left with the motion sensor and external controls below it. On the right are 2D illustrations of the trashcan in action.
-The overhead of the lid are images created through Procreate and go between two images based on when the lid is open or closed. On the lid, there's a placeholder on where the digital screen would be. 
-
-The general layout of the trashcan was found pretty early on in the sketching and brainstorming process of how to make a trashcan "smart". When coming up with ideas, we thought about the general characteristics of a trashcan: the capacity, the smell, the weight, trashday, age of trash. We also wanted to add a new feature that has been added to trashcans - motion sensors.
-
-Motion control was an instant add for contactless throwaway feature and being a new feature of trashcans. One of our group members had some of them in their apartment. You can also see them around the University of Cincinnati's campus.
-
-Odor was added because it often indicated when the trash needed to be taken out. Before thinking of a digital screen, we thought to put a light indicator on the lid to show if it was smelly i.e. it would glow once the stank went up to a certain level. We had the idea of putting in a mold detector, but decided the strength of the odor would be enough to tell the user the trash needed to be thrown out. Because of that, we used it as an external control to show that the screen would give alerts of when to throw the trash out.
-
-We all came up with our own sketches and discussed them in person, but we couldn't fully decide because we were missing something - a digital screen. 
-
-By Joey Yong - "I wanted to separate the features between the trashcan and the webpage, things like weight and capacity could be looked at on an app with minimal controls on the trashcan".
-![firsttrashsketch](https://github.com/user-attachments/assets/047e9597-bca4-49fb-858d-0007b2744a73)
-
-There had to be a digital screen for the assignment, so we later met on discord in the voice channel of a server and used the discord app, whiteboard, to collectively scribble on what the interface and trashcan would look like.
-
-![Screenshot 2024-10-22 195402](https://github.com/user-attachments/assets/82bc2dd7-8d8c-4189-aaf5-ca6b4fc8c951)
-
-![Screenshot 2024-10-22 195412](https://github.com/user-attachments/assets/f77b7a0d-baf8-4504-a758-293ff6eb1263)
-![Scan 22 Oct 24 21·19·09 1729646408371](https://github.com/user-attachments/assets/23a4059e-7487-4821-9050-f7c0178c175a)
-
-We were having trouble placing the screen, but we knew we wanted it on the lid. We didn't want put any features/controls anywhere besides the lid because it would make the simple trashcan unnecessarily busy. There were suggestions of making the lid itself a monitor, but there were strong vetoes and feedback from people that it would crowd the top. Also, the screen would make the lid heavy and troublesome to maintain or not break. We then decided on a final sketch.
-![Scan 22 Oct 24 21·19·09 1729646408370](https://github.com/user-attachments/assets/a52c333a-f3f1-47fa-b496-7b8feeabf247)
-![Scan 22 Oct 24 21·19·09 1729646408369](https://github.com/user-attachments/assets/c4b450a6-988f-4858-90c7-d3d4e236bee0)
-
-![Final_trashsketch](https://github.com/user-attachments/assets/c12ca9e9-2fd6-4256-9a95-a5dcd6df856a)
-
-We extended the front of the lid and put it at a slant so it could be looked at more easily from other angles. Initially, the lid was the same color as the frame but there was some concern over not being able to tell the lid apart from the frame so the lid was darkened. The side view is a dark color because it shows the inside of the trashcan, not the outside. 
-
-### Hybrid Sketch
-
-![Screenshot_20241022_233202_Gallery](https://github.com/user-attachments/assets/51250d9a-d837-4888-88be-f3ea53e847eb)
-
-### Story Board
-
-![Scan 22 Oct 24 21·19·09 1729653926342](https://github.com/user-attachments/assets/bfe3b564-9320-45a6-ad32-b820d568f076)
-
-### Color Palette 
-![Smart Trash Can Color Palette](https://github.com/user-attachments/assets/db4c2897-b8e2-46d6-b3f1-2e753f5a210e)
-
-
-We went with a sea green palette with an orange to contrast. Trashcans are usually green and the color is associated with being environmentally friendly. We mixed some blue in and lightened the color to be softer on the eyes.
 
 ## Future 
 We might polish up some features and add some more controls we weren't able to in the time frame such as a day counter - to act like days going by. 
